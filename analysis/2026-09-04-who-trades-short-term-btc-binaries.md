@@ -80,6 +80,7 @@ ratio widens monthly. Full tables (17 Kalshi products, 51 Polymarket products) i
 
 - The product opened at full size: 14.4k wallets, $11.7M, 46% bots on day two. It did not grow into it.
 - The decline is a funnel problem: new wallets per day fell from 10,700 to 2,100. Existing users behaved identically throughout.
+- Bot share over the life of the product (report rule: 300+ fills/day or 100+ across 16 hours). Taker $ by sample day: Feb 13 46%, Mar 3 58%, Apr 8 44%, Apr 14-15 48%, May 2 43%, Jun 25 57%, Jul 31 51%, Aug 30 59%, Sep 1-2 66%, Sep 9 60% (69% under the strict rule). Weighting each month's taker $ (from the 34 sample days) by its period bot share (Feb-Apr 49%, May-Jun 52%, Jul-Aug 54%, Sep 63%) gives about 51% of all taker $ from Feb 13 to Sep 9 (roughly $1.4B of $2.7B one-sided). Maker legs: 78% bots in April, 86% in September (the two measured samples), so about 80% over the period. Headline volume, both legs: about 65% bots over the product's life, 63% at the April peak, 76 to 78% in September.
 - Concentration: top-10 wallets 26% of taker $ at launch, 14% in May, 17% in Aug; top-100 53%, 40%, 51%.
 - Lifecycle: 62% of all 221k wallets appear on one sample day (14% of $); 3% appear on 10+ days and hold 39% of $.
 - Retention of new wallets: 22% seen again about 6 days later, 15% at about 12 days, 9% at about 24 days.
