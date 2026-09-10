@@ -25,6 +25,48 @@ see section 11. Do not re-derive unless you want to extend the sample.
 
 API limits found: Kalshi `/markets` (settled) only serves roughly the last 68 days; older markets come from `/historical/markets` (newest-first cursor walk, time filters ignored, limit 1000 or less). Kalshi has no account identities. Polymarket gamma `volumeNum` is missing on many older markets, so use measured taker volume, not headline.
 
+## 1b. Six-month product volume series (Mar to Aug 2026, both venues): the market this sits in
+
+Separate pull (2026-09-01) covering every recurring crypto product on both venues, monthly, from the
+Kalshi settled-market tape (3.4M markets via `/markets` and `/historical/markets`) and Polymarket gamma
+events by series. Units differ by venue: Kalshi = $1-notional contracts settled per day (multiply by
+about 0.276 for a premium-dollar equivalent, tape-measured); Polymarket = premium $/day as reported.
+
+Kalshi, contracts per day (top products):
+
+| Product | Mar | Apr | May | Jun | Jul | Aug | Aug vs Mar |
+|---|---|---|---|---|---|---|---|
+| BTC 15m up/down | $16.4M | $21.4M | $34.6M | $78.8M | $136.6M | $177.1M | +983% |
+| BTC hourly above/below ladder | $15.8M | $18.5M | $25.1M | $43.1M | $44.9M | $39.1M | +148% |
+| ETH 15m | $1.70M | $1.75M | $1.76M | $3.51M | $7.49M | $8.75M | +415% |
+| XRP 15m | $0.74M | $0.41M | $0.48M | $1.26M | $2.16M | $3.74M | +404% |
+| SOL 15m | $0.81M | $0.52M | $0.65M | $1.16M | $2.21M | $2.92M | +262% |
+| HYPE 15m | $0.14M | $0.26M | $0.37M | $1.62M | $2.59M | $2.59M | +1759% |
+| DOGE 15m | $0.11M | $0.22M | $0.26M | $0.91M | $2.00M | $2.37M | +2012% |
+| BNB 15m | $0.04M | $0.14M | $0.21M | $0.76M | $1.40M | $1.70M | +3936% |
+| ETH hourly ladder | $0.65M | $0.49M | $0.33M | $0.81M | $1.52M | $1.73M | +167% |
+
+Polymarket, premium $ per day (top products):
+
+| Product | Mar | Apr | May | Jun | Jul | Aug | Aug vs Mar |
+|---|---|---|---|---|---|---|---|
+| BTC 5m up/down | $13.4M | $31.1M | $22.2M | $24.0M | $21.6M | $14.4M | +7% |
+| BTC 15m up/down | $3.48M | $6.13M | $4.17M | $3.65M | $2.83M | $2.47M | -29% |
+| BTC daily close ladder | $1.97M | $4.55M | $3.08M | $2.89M | $1.83M | $1.49M | -24% |
+| ETH 5m | $1.50M | $3.12M | $2.16M | $1.93M | $1.97M | $1.01M | -33% |
+| BTC monthly touch ladder | $3.91M | $3.32M | $1.85M | $1.41M | $1.13M | $0.81M | -79% |
+| BTC hourly up/down | $1.59M | $2.13M | $1.10M | $0.96M | $0.83M | $0.74M | -54% |
+| ETH 15m | $0.79M | $1.45M | $0.85M | $0.73M | $0.65M | $0.48M | -39% |
+| SOL 5m | $0.69M | $1.34M | $0.70M | $0.74M | $0.78M | $0.32M | -54% |
+
+Read: Kalshi's 15m franchise is the only product on either venue with sustained month-on-month growth
+(BTC 10.8x in six months, every alt 15m 3 to 40x, all inflecting in June when broker distribution
+stepped up). Kalshi's hourly ladder plateaued in June. Every Polymarket crypto product peaked in April
+and has declined since; only Polymarket daily up/down and 4h grew, both under $0.3M/day. Cross-venue:
+Kalshi sub-hour crypto is about 12x Polymarket's in contract terms (about 3x in premium terms) and the
+ratio widens monthly. Full tables (17 Kalshi products, 51 Polymarket products) in
+`reports/2026-09-01-recurring-crypto-products-6mo.md`; monthly CSVs and raw JSON in `data/`.
+
 ## 2. Polymarket BTC 5m: the whole life of the product
 
 | Date | Taker $/day | Wallets/day | New wallets/day | Bot share of $ | Manual PnL to settlement |
@@ -99,7 +141,7 @@ The wallet-level list of the top Polymarket takers and makers (addresses, displa
 ## 7. Channel evidence
 
 - Polymarket builder-code attribution (data-api `/v1/builders/leaderboard`): about $46M in the first 3 days of September across 50 third-party front ends, about $450M/month run rate (about 15% of Polymarket total). Largest: betmoar $10M (262 users), Gate $7M (9 users), traderline $4.5M (181), SpreadCore $2.7M, PolyHelper $2.5M, MagicMarkets $2.3M (1 user), MetaMask $1.5M (529 users), RedotPay, Jupiter. Everything else is the Polymarket app plus un-attributed API flow. Re-checked live on 2026-09-08: the daily leaderboard shows the same names in the same order of magnitude (betmoar $3.8M/day with 171 users, Gate $2.0M with 2 users, MetaMask $1.6M, traderline $1.6M, SpreadCore $1.4M).
-- Polymarket has no broker distribution; Kalshi's flow arrives through Robinhood and Webull, which is why Kalshi's 15m does 20x or more Polymarket's 15m premium with the same behaviour.
+- Polymarket has no broker distribution; Kalshi's flow arrives through Robinhood and Webull, which is a large part of why Kalshi's 15m does roughly 8x (against Polymarket's 5m and 15m combined) to 20x (against its 15m alone) the premium with the same behaviour; US access, in-app placement, deeper market-maker books and the absence of a cannibalising 5m product on Kalshi contribute too.
 
 ## 8. Conclusions that matter for a new venue
 
@@ -118,7 +160,9 @@ The wallet-level list of the top Polymarket takers and makers (addresses, displa
 - `reports/2026-09-01-recurring-crypto-products-6mo.md`: six-month product volume tables for both venues.
 - `data/pm_btc5m_market_days.jsonl`: per-market, per-sample-day aggregates for Polymarket BTC 5m (9,790 rows). `data/kalshi_kxbtc15m_days.jsonl`: the 13 Kalshi sample days with size-class bins. Schemas in `data/README.md`.
 - GitHub release `data-2026-09`: raw Kalshi prints for 5 of the 13 sample days (Aug 11, 16, 21, 26, 31; about 80 MB gzipped).
-- Not retained: the pull and analysis scripts, the raw Polymarket fills, per-wallet-day aggregates, and the first 8 Kalshi sample days. The Polymarket side can be re-pulled from the public data API; the Kalshi July days cannot (68-day retention). Verdict's launch board, incentive plan and MM requirements referenced by the original handoff are internal documents and are not included.
+- `data/verdict_recurring_{kalshi,polymarket}_monthly.csv` and `_monthly_raw.json`: the six-month monthly totals behind section 1b.
+- `data/pm_builder_attribution_2026-09-10.md` and `pm_btc5m_human_share_sensitivity_2026-09-09.md`: later snapshots that extend sections 7 and 3.
+- Not retained: the pull and analysis scripts, the raw Polymarket fills, per-wallet-day aggregates, and the first 8 Kalshi sample days. To rebuild: Polymarket, gamma `GET /events?series_id=<id>&end_date_min/max` (5m = 10684, 15m = 10192) to list markets per day, then data-api `GET /trades?market=<conditionId>&limit=1000&offset=` for taker legs and the same with `takerOnly=false` for both legs (a maker leg is one whose (tx, wallet) is not in the taker set); offsets cap out around 10k per market; aggregate per wallet per day and classify with the section 0 rules. Kalshi, `GET /trade-api/v2/markets?series_ticker=KXBTC15M&status=settled` then `GET /markets/trades?ticker=&cursor=` per window; reconstruct parent orders by grouping prints within 2 ms on the same side of the same market. The Polymarket side can be re-pulled from the public data API; the Kalshi July days cannot (68-day retention). Verdict's launch board, incentive plan and MM requirements referenced by the original handoff are internal documents and are not included.
 
 ## 10. Known gaps and how to extend
 
