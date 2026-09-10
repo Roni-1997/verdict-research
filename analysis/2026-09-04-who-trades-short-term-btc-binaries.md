@@ -193,7 +193,7 @@ No identities, so order-level only (prints within 2ms, same side and market = on
 | over 5,000 | | 14% | | 31% placed in the last 2 minutes, 50% at price extremes: MMs flattening plus late "sure thing"; only rational with reduced or waived fees |
 
 - Taker PnL after the published fee is negative every single day (-1.3% to -3.8%).
-- 37-42% of volume trades 20:00-03:00 UTC every day (US evening, Robinhood distribution).
+- 37-42% of volume trades 20:00-03:00 UTC every day (US evening). Attributing this to Robinhood distribution is an inference from timing and from Robinhood's public statements about its share of Kalshi volume overall, not a measurement: the Kalshi tape carries no identities and no channel, and the human-versus-automated split of this flow is not measurable (see `data/kalshi_kxbtc15m_order_shape_2026-09-10.md`).
 - Volume grew 60% from July to late August (125M to 198M contracts/day) with mix, fee burden and intraday rhythm unchanged.
 - Fee schedule: fee per contract = 0.07 x p x (1-p), max 1.75c at 50c, about zero at the extremes. Kalshi 15m fee revenue estimate: $40-80M/month from BTC 15m alone. Its published incentive spend is capped at $1-1,000 per market per day (open tier) and $50k per series per week (MM tier), i.e. it pays roughly 0.3-0.5% of the fee revenue those markets generate. Kalshi buys liquidity with flow, not cash. (Incentive caps per Kalshi's published program terms, not measured.)
 
@@ -204,7 +204,7 @@ The wallet-level list of the top Polymarket takers and makers (addresses, displa
 ## 7. Channel evidence
 
 - Polymarket builder-code attribution (data-api `/v1/builders/leaderboard`): about $46M in the first 3 days of September across 50 third-party front ends, about $450M/month run rate (about 15% of Polymarket total). Largest: betmoar $10M (262 users), Gate $7M (9 users), traderline $4.5M (181), SpreadCore $2.7M, PolyHelper $2.5M, MagicMarkets $2.3M (1 user), MetaMask $1.5M (529 users), RedotPay, Jupiter. Everything else is the Polymarket app plus un-attributed API flow. Re-checked live on 2026-09-08: the daily leaderboard shows the same names in the same order of magnitude (betmoar $3.8M/day with 171 users, Gate $2.0M with 2 users, MetaMask $1.6M, traderline $1.6M, SpreadCore $1.4M).
-- Polymarket has no broker distribution; Kalshi's flow arrives through Robinhood and Webull, which is a large part of why Kalshi's 15m does roughly 8x (against Polymarket's 5m and 15m combined) to 20x (against its 15m alone) the premium with the same behaviour; US access, in-app placement, deeper market-maker books and the absence of a cannibalising 5m product on Kalshi contribute too.
+- Polymarket has no broker distribution; Kalshi has Robinhood and Webull as channels. How much of KXBTC15M flow arrives through them, and how much of it is human, is not measurable from public data. Broker distribution is a plausible, unproven, large part of why Kalshi's 15m does roughly 8x (against Polymarket's 5m and 15m combined) to 20x (against its 15m alone) the premium with the same behaviour; US access, in-app placement, deeper market-maker books and the absence of a cannibalising 5m product on Kalshi contribute too.
 
 ## 8. Conclusions that matter for a new venue
 
