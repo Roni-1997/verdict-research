@@ -1,0 +1,1358 @@
+{
+ "DAY": [
+  {
+   "rank": "1",
+   "builder": "betmoar",
+   "builderCode": "0xceebf77a833b30520287ddd9478ff51abbdffa30aa90a8d655dba0e8a79ce0c1",
+   "volume": 2748620.473812,
+   "activeUsers": 164,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/betmoar_2.png"
+  },
+  {
+   "rank": "2",
+   "builder": "Gate",
+   "builderCode": "0x2c6624a23b16a2a69acd14c87b7fc03906870c851fa0a7b7f9d7be0fbbedea8a",
+   "volume": 1617666.5629459997,
+   "activeUsers": 3,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-6204678-8b397176-c77c-4533-9620-8037e82399cf.png"
+  },
+  {
+   "rank": "3",
+   "builder": "traderline",
+   "builderCode": "0x6b0e773fada0a2ec67c956b25a737d353a534ea33db56c717ba7854346c67984",
+   "volume": 1219942.2897330003,
+   "activeUsers": 117,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-1377213-24116eb2-24b0-429e-89a5-4fd2b6182074.png"
+  },
+  {
+   "rank": "4",
+   "builder": "SpreadCore.xyz",
+   "builderCode": "0xbb4ee21f97774d5810e0d29e47d81524f0183693d42db63b3ebb65a89eff4fa6",
+   "volume": 1138851.3136019995,
+   "activeUsers": 42,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4211034-1addb252-355d-4f61-994c-54fbb7bdc445.jpg"
+  },
+  {
+   "rank": "5",
+   "builder": "MetaMask",
+   "builderCode": "0x11a22276beb720e66a072cba8b8e74cded60afda510af535b947b81a1b81a883",
+   "volume": 1074812.587009,
+   "activeUsers": 248,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4012248-5ad05c5e-f4c3-4d9f-882a-78bcb1b30cfe.jpg"
+  },
+  {
+   "rank": "6",
+   "builder": "PolyHelper.io",
+   "builderCode": "0xb05677aa676cd5aeab7e8d85ef83836ee1bf4e3de5519d5bbb6594484b51a805",
+   "volume": 647553.5777450001,
+   "activeUsers": 22,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-5893977-4a331aa3-34df-45ca-b107-9ecdae4de2cf.jpg"
+  },
+  {
+   "rank": "7",
+   "builder": "polymtrade",
+   "builderCode": "0x7f8b6b088b6d74c2852fc86c796dca07b44eed6fb3daf5e6b59f7c364db14528",
+   "volume": 518567.60451999994,
+   "activeUsers": 568,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/polymtrade.png"
+  },
+  {
+   "rank": "8",
+   "builder": "MagicMarkets",
+   "builderCode": "0xd1d9dd6983c40006b0dc8eab84a41ac9a4f27643296178479ffbebbc01ab7bde",
+   "volume": 391396.02073499985,
+   "activeUsers": 1,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-5148537-b5dbf263-8d5f-41d7-bba1-387bfa17075c.png"
+  },
+  {
+   "rank": "9",
+   "builder": "PolyCop",
+   "builderCode": "0x4898df15ec6590495dc6c0fedf951ade3e64001d47f9caf44a64e86fc11959df",
+   "volume": 342469.6490780001,
+   "activeUsers": 305,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4043800-ced7ecde-0754-46a1-8a16-bb6c338fbf39.png"
+  },
+  {
+   "rank": "10",
+   "builder": "Sharkbetting.com",
+   "builderCode": "0xf3a209e3ea161180c4e900ffdba5b35d3434d60136072f49f5f54337c63f452c",
+   "volume": 318252.5553319999,
+   "activeUsers": 2,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-1323300-7d47ebfd-c3f6-41cc-8ec2-af6fc37b6008.png"
+  },
+  {
+   "rank": "11",
+   "builder": "Bagel",
+   "builderCode": "0xe8358d121a1a1a849f5d81ea46d50efd006adf0ed2e7704b19c47bb7bec72b87",
+   "volume": 270768.84351699986,
+   "activeUsers": 149,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4455686-cb3b1330-537b-4b01-a079-c4f13330b2f3.jpg"
+  },
+  {
+   "rank": "12",
+   "builder": "Jupiter",
+   "builderCode": "0x8c359a3a4c67311bbc1bdb59dac1dce23b15492db3c193942991e33b3515439d",
+   "volume": 256791.89232500005,
+   "activeUsers": 1,
+   "verified": true,
+   "builderLogo": ""
+  },
+  {
+   "rank": "13",
+   "builder": "Sharktool",
+   "builderCode": "0x873590b37cc721a8194d6d905e31d41f7f093312907ba9a5cb83969589544418",
+   "volume": 237573.52972900003,
+   "activeUsers": 22,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-9347859-3f5f861c-3b8b-489f-9298-1e88c45f0baf.png"
+  },
+  {
+   "rank": "14",
+   "builder": "almanac.market",
+   "builderCode": "0x196258757463baebc045d1adc1c9c0a55cad7ac5d09ab7b7e1eb31803d9bfbe0",
+   "volume": 225888.733479,
+   "activeUsers": 75,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-3963913-81873203-cc83-4d2d-b70e-c5a67f3c4b98.png"
+  },
+  {
+   "rank": "15",
+   "builder": "NoArb",
+   "builderCode": "0x9fb680eff2c1a05610864e3c892b020cb4fd1e11440836cceacae84eda294352",
+   "volume": 220430.312223,
+   "activeUsers": 7,
+   "verified": true,
+   "builderLogo": ""
+  },
+  {
+   "rank": "16",
+   "builder": "NautilusTrader",
+   "builderCode": "0x4f2c0bba608033563f74b82300e2ed59f54f8d0de08281031f03fb2c62819e63",
+   "volume": 156865.741213,
+   "activeUsers": 65,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-7738376-600a7b4b-286b-46d9-8188-4993f7b5a1a1.png"
+  },
+  {
+   "rank": "17",
+   "builder": "polytraderpro",
+   "builderCode": "0x29f8d1998cd4186678d0085cd54072aeefd05bc476ef1844361510d857ac074b",
+   "volume": 137112.884723,
+   "activeUsers": 8,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/polytraderpro.jpeg"
+  },
+  {
+   "rank": "18",
+   "builder": "Preddy.trade",
+   "builderCode": "0x25d56a25be81b183908e80ccc522e72d4187480a4aa29fa7e4dd1112546fabef",
+   "volume": 116181.04823900001,
+   "activeUsers": 87,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-3317118-3865b431-2746-4a19-8f96-ad4ee13add1e.png"
+  },
+  {
+   "rank": "19",
+   "builder": "Rumor",
+   "builderCode": "0x44cd41c8e0938828f288417db30ef1dbab12f3c5045d93dd2a24d75d439a32a2",
+   "volume": 111910.56,
+   "activeUsers": 5,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-7970303-f4347845-a935-48da-826a-931353814f77.png"
+  },
+  {
+   "rank": "20",
+   "builder": "Future",
+   "builderCode": "0x2cb0f54d206f483e4bf3a8737b3359de64f569424c7f4ec8e1d577010918d4f8",
+   "volume": 96259.78179899999,
+   "activeUsers": 55,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4494712-67563788-d819-4582-b66e-81fbcffc5a76.png"
+  },
+  {
+   "rank": "21",
+   "builder": "Polywatchdog.com",
+   "builderCode": "0x8549304c871421937ce57606cb8be1e593511167489d0d02e7e5e3eb874112bb",
+   "volume": 87410.60083799997,
+   "activeUsers": 1,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-6656441-2ce5a47f-30da-4558-881a-476fd42f0b5e.png"
+  },
+  {
+   "rank": "22",
+   "builder": "Fortuna",
+   "builderCode": "0xa4a19c1632a74740c2775b781af739089e859cd3cf12ce3a4cf6c416f69f39f9",
+   "volume": 87390.310417,
+   "activeUsers": 1,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-5141281-4548888d-36c3-4f2d-8d0a-d09a1f42c71d.jpg"
+  },
+  {
+   "rank": "23",
+   "builder": "TerminalUp",
+   "builderCode": "0x055df23866e2c11faefd27a94ff2ba223c068d60ae2d21c91f2f7a85810c720f",
+   "volume": 85408.05933100003,
+   "activeUsers": 1,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-8216914-3f505e83-0eb4-49a6-9daa-0dd863491c88.png"
+  },
+  {
+   "rank": "24",
+   "builder": "PolymarketScan.org - Free Data",
+   "builderCode": "0x7a83214b7f0f7fc9171917d8cfad8814196f50d5e9e49d87bfd58415ae113160",
+   "volume": 84184.473166,
+   "activeUsers": 1,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4621080-790c25cf-229e-47ff-8816-2e971733e449.jpg"
+  },
+  {
+   "rank": "25",
+   "builder": "Pulse Market",
+   "builderCode": "0xf6d1d65e02fc896f5834654997f8daa2ef1841684e53235d896154d4c5f62a36",
+   "volume": 81813.020965,
+   "activeUsers": 81,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-5093929-77baba70-c328-4781-8eeb-1b982908e75e.jpg"
+  },
+  {
+   "rank": "26",
+   "builder": "Almanac Dev Sell Test",
+   "builderCode": "0x830937f45b056a8664783d7d50e7b0f5f188547235a65416fc9367b1f3340b78",
+   "volume": 81518.17,
+   "activeUsers": 38,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4109282-63fef68d-9494-4960-b607-c95dd7c919c9.png"
+  },
+  {
+   "rank": "27",
+   "builder": "RedotPay",
+   "builderCode": "0x26185f3fedc906019d9f028e253fbea67fe212fb5b02a0cedc57c12ddc9c7805",
+   "volume": 79632.428561,
+   "activeUsers": 265,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-8337795-be6d875f-2503-4af0-ada1-8cf5f42e960c.png"
+  },
+  {
+   "rank": "28",
+   "builder": "Kreo",
+   "builderCode": "0x9fedc0b0702ca6cb294e5321d9491b1e38b8bd2b463a7f7b06df8e6d7553cd18",
+   "volume": 71224.76567999998,
+   "activeUsers": 152,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-5005416-c803d9c0-038a-4afc-a214-9c16cca376bb.png"
+  },
+  {
+   "rank": "29",
+   "builder": "Tailgate",
+   "builderCode": "0x03d53e4e8daed156c80448931d72b3b6b0b57e1565bfa2855fca74a055f24c08",
+   "volume": 70751.00691200001,
+   "activeUsers": 124,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4392096-521c9b77-af74-484c-9e81-f17a79141a5c.png"
+  },
+  {
+   "rank": "30",
+   "builder": "EVplusAI",
+   "builderCode": "0xb8d6bf0c9ec3c806c30fcb0e8da931f2940a5141cf420394c4b1d82ae7c6d415",
+   "volume": 70571.098637,
+   "activeUsers": 6,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-3323262-d9867b49-8799-4de6-9578-156a291600ef.png"
+  },
+  {
+   "rank": "31",
+   "builder": "standtrade",
+   "builderCode": "0x13600b294191fc92924bb3ce4b969c1e7e2bab8f4c93c3fc6d0a51733df3c060",
+   "volume": 69851.657268,
+   "activeUsers": 57,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/standtrade.png"
+  },
+  {
+   "rank": "32",
+   "builder": "Polytrader.app",
+   "builderCode": "0x6f5dfb79b61e701021143a9426b4188bda94da794068dec5454a0ac2ec82bc64",
+   "volume": 68541.46921600001,
+   "activeUsers": 5,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-842393-ce7a0991-f3d3-4594-935b-2cef7f0594a5.png"
+  },
+  {
+   "rank": "33",
+   "builder": "protrade.tech",
+   "builderCode": "0xe8f62837483813cd7315c30c73d0fe1356ef604cfed294bc4f956fa92871a9bb",
+   "volume": 61652.179311,
+   "activeUsers": 13,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-9380514-fea77f25-ee32-4a77-92a8-ff67a62fcb5b.png"
+  },
+  {
+   "rank": "34",
+   "builder": "doxa",
+   "builderCode": "0x280c98c52cd474cb7b0b7ab0f3b03ce3c5f57807f08582d54ad8a01b024ddff2",
+   "volume": 61182.58350600001,
+   "activeUsers": 1,
+   "verified": true,
+   "builderLogo": ""
+  },
+  {
+   "rank": "35",
+   "builder": "PolyTap Bot",
+   "builderCode": "0xc95d2e7e3ac472e227808ee3929f5d0446d263b4b58cc88eba629148d3f90683",
+   "volume": 57898.399579000004,
+   "activeUsers": 4,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4477172-19e0f470-e357-4b57-8689-a672edfec914.png"
+  },
+  {
+   "rank": "36",
+   "builder": "Polygun",
+   "builderCode": "0xd625c78659cda77fc5e1b2c2657ec4ecc9187ec82fbc4a2300337269332c046b",
+   "volume": 55156.97712100001,
+   "activeUsers": 132,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4209153-39bd4d88-74c5-4446-9ee6-28b62c5db06f.png"
+  },
+  {
+   "rank": "37",
+   "builder": "Deepcoin",
+   "builderCode": "0x290cc664cf4e73a74eb00bf68930b911534dc89cd7dec354693b0f16796dd8c4",
+   "volume": 49849.495349,
+   "activeUsers": 1,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-5633836-00c460b8-6fdb-4e93-b4ca-4def1d9076b0.png"
+  },
+  {
+   "rank": "38",
+   "builder": "Bitget Wallet",
+   "builderCode": "0x9e6b4ca0e5b559c5a3683b66e0b82df37abff18ee33b2ed25837567f2029825a",
+   "volume": 46217.367834,
+   "activeUsers": 113,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-6685340-df966cb1-99b3-4100-bcd8-d606662b9c78.png"
+  },
+  {
+   "rank": "39",
+   "builder": "Amplifi",
+   "builderCode": "0xfa548f67961bcd0be1830bcd3e6b750981bd093bfbdbb52e6ac4348a4cdce3d3",
+   "volume": 41363.514421999986,
+   "activeUsers": 25,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-8050338-cecbf2bf-35bc-4cb6-8fb9-4fb2730ca343.png"
+  },
+  {
+   "rank": "40",
+   "builder": "Bullpen",
+   "builderCode": "0x2a80e1ef1d7842f27f2e6be0972bb708b9a135c38860dbe73c27c3486c34f4de",
+   "volume": 35611.418445,
+   "activeUsers": 61,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-3585491-c917925a-907c-4b9b-a05a-b20e7e2a0fa4.png"
+  },
+  {
+   "rank": "41",
+   "builder": "Olympusx.app",
+   "builderCode": "0x98846a9b6a378da7c0653261d64f1aecb32c9f8ac9d0302ab659d75ae3ae72ec",
+   "volume": 35373.703524,
+   "activeUsers": 100,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-3206520-9e273d56-6dd7-44d7-b394-6e21f2022875.png"
+  },
+  {
+   "rank": "42",
+   "builder": "AntalphaAI",
+   "builderCode": "0x00bcac1e5969a2275d25938b57163308cb78df2b92b5e70483d32d9a9b9f5de8",
+   "volume": 33618.28555400001,
+   "activeUsers": 1,
+   "verified": true,
+   "builderLogo": ""
+  },
+  {
+   "rank": "43",
+   "builder": "Nomos",
+   "builderCode": "0x62f2634ca14f60ef236180507324622cff1f38f0483987c455b7534c68b76901",
+   "volume": 29956.168472999998,
+   "activeUsers": 1,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4523871-2d4b011d-f12a-4a3b-945e-6bcae50a3939.png"
+  },
+  {
+   "rank": "44",
+   "builder": "Phemex",
+   "builderCode": "0x0b4528991194951b3570dd3578d1c5b3ad700ff3ca9b7c945306f2a91f490bab",
+   "volume": 28939.284991999997,
+   "activeUsers": 1,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-7409043-5f561f9f-b83b-473f-8106-2903a862b35f.png"
+  },
+  {
+   "rank": "45",
+   "builder": "Share",
+   "builderCode": "0x74ca2021bf645af182ac7049edccc6d079d7c3bd428ec66806fd89ee9d5898ec",
+   "volume": 28904.228421000003,
+   "activeUsers": 16,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-5128404-69573be2-2677-4528-b41b-c40280779dc8.png"
+  },
+  {
+   "rank": "46",
+   "builder": "FORS",
+   "builderCode": "0x1eb72e03ab449a2d2083b7bca2287513436a3599288d19f7a827e630be59a3d9",
+   "volume": 28732.27436999999,
+   "activeUsers": 1,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4290712-cc46ceb8-c04a-4c3b-99b7-a687c2cda778.png"
+  },
+  {
+   "rank": "47",
+   "builder": "polyinit.com",
+   "builderCode": "0xde2885d1fca3c0834d92b223139c03303eb88234374eeba4f92772577d11349c",
+   "volume": 23963.755111000006,
+   "activeUsers": 27,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-8423633-b69b6461-9714-4e24-a9e9-052ad795f808.png"
+  },
+  {
+   "rank": "48",
+   "builder": "Polyburg",
+   "builderCode": "0x4d1a90fe58b930f41918bc590e4f42116dc669fdf179cbf9247253671b43e136",
+   "volume": 23361.565056999996,
+   "activeUsers": 15,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4024296-8f9fe295-8bd2-4e22-bafa-f24e6457d896.jpg"
+  },
+  {
+   "rank": "49",
+   "builder": "ForeGate",
+   "builderCode": "0x3a6b15bc36a82ae9011cfbb355deabf94daccb7fa70a5200785741c2c83d1960",
+   "volume": 23089.474952000008,
+   "activeUsers": 1,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-9492507-57e98bd8-18b8-40d8-925c-2d6fc7a5b1ca.png"
+  },
+  {
+   "rank": "50",
+   "builder": "PolyEcho",
+   "builderCode": "0xe7bd311abb3a706580f8f5dea993360e4805582f0a7cceb3d1a3abf87bbf7697",
+   "volume": 22074.951937,
+   "activeUsers": 5,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-7726014-33a58dba-3fe6-437e-9c88-8b0733789fff.png"
+  }
+ ],
+ "WEEK": [
+  {
+   "rank": "1",
+   "builder": "betmoar",
+   "builderCode": "0xceebf77a833b30520287ddd9478ff51abbdffa30aa90a8d655dba0e8a79ce0c1",
+   "volume": 19727180.21785303,
+   "activeUsers": 300,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/betmoar_2.png"
+  },
+  {
+   "rank": "2",
+   "builder": "traderline",
+   "builderCode": "0x6b0e773fada0a2ec67c956b25a737d353a534ea33db56c717ba7854346c67984",
+   "volume": 14128092.234079,
+   "activeUsers": 218,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-1377213-24116eb2-24b0-429e-89a5-4fd2b6182074.png"
+  },
+  {
+   "rank": "3",
+   "builder": "Gate",
+   "builderCode": "0x2c6624a23b16a2a69acd14c87b7fc03906870c851fa0a7b7f9d7be0fbbedea8a",
+   "volume": 11546157.318244996,
+   "activeUsers": 6,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-6204678-8b397176-c77c-4533-9620-8037e82399cf.png"
+  },
+  {
+   "rank": "4",
+   "builder": "MetaMask",
+   "builderCode": "0x11a22276beb720e66a072cba8b8e74cded60afda510af535b947b81a1b81a883",
+   "volume": 10618314.944926996,
+   "activeUsers": 868,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4012248-5ad05c5e-f4c3-4d9f-882a-78bcb1b30cfe.jpg"
+  },
+  {
+   "rank": "5",
+   "builder": "SpreadCore.xyz",
+   "builderCode": "0xbb4ee21f97774d5810e0d29e47d81524f0183693d42db63b3ebb65a89eff4fa6",
+   "volume": 8156812.244356001,
+   "activeUsers": 60,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4211034-1addb252-355d-4f61-994c-54fbb7bdc445.jpg"
+  },
+  {
+   "rank": "6",
+   "builder": "MagicMarkets",
+   "builderCode": "0xd1d9dd6983c40006b0dc8eab84a41ac9a4f27643296178479ffbebbc01ab7bde",
+   "volume": 4141823.191631,
+   "activeUsers": 1,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-5148537-b5dbf263-8d5f-41d7-bba1-387bfa17075c.png"
+  },
+  {
+   "rank": "7",
+   "builder": "PolyHelper.io",
+   "builderCode": "0xb05677aa676cd5aeab7e8d85ef83836ee1bf4e3de5519d5bbb6594484b51a805",
+   "volume": 4080857.351390999,
+   "activeUsers": 41,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-5893977-4a331aa3-34df-45ca-b107-9ecdae4de2cf.jpg"
+  },
+  {
+   "rank": "8",
+   "builder": "Sharktool",
+   "builderCode": "0x873590b37cc721a8194d6d905e31d41f7f093312907ba9a5cb83969589544418",
+   "volume": 3953170.304800001,
+   "activeUsers": 44,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-9347859-3f5f861c-3b8b-489f-9298-1e88c45f0baf.png"
+  },
+  {
+   "rank": "9",
+   "builder": "polymtrade",
+   "builderCode": "0x7f8b6b088b6d74c2852fc86c796dca07b44eed6fb3daf5e6b59f7c364db14528",
+   "volume": 3844419.388030999,
+   "activeUsers": 1533,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/polymtrade.png"
+  },
+  {
+   "rank": "10",
+   "builder": "Sharkbetting.com",
+   "builderCode": "0xf3a209e3ea161180c4e900ffdba5b35d3434d60136072f49f5f54337c63f452c",
+   "volume": 3059456.4510080013,
+   "activeUsers": 2,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-1323300-7d47ebfd-c3f6-41cc-8ec2-af6fc37b6008.png"
+  },
+  {
+   "rank": "11",
+   "builder": "PolyCop",
+   "builderCode": "0x4898df15ec6590495dc6c0fedf951ade3e64001d47f9caf44a64e86fc11959df",
+   "volume": 2319604.26767,
+   "activeUsers": 538,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4043800-ced7ecde-0754-46a1-8a16-bb6c338fbf39.png"
+  },
+  {
+   "rank": "12",
+   "builder": "Jupiter",
+   "builderCode": "0x8c359a3a4c67311bbc1bdb59dac1dce23b15492db3c193942991e33b3515439d",
+   "volume": 1682369.750471,
+   "activeUsers": 1,
+   "verified": true,
+   "builderLogo": ""
+  },
+  {
+   "rank": "13",
+   "builder": "standtrade",
+   "builderCode": "0x13600b294191fc92924bb3ce4b969c1e7e2bab8f4c93c3fc6d0a51733df3c060",
+   "volume": 1606642.7277790005,
+   "activeUsers": 87,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/standtrade.png"
+  },
+  {
+   "rank": "14",
+   "builder": "Bagel",
+   "builderCode": "0xe8358d121a1a1a849f5d81ea46d50efd006adf0ed2e7704b19c47bb7bec72b87",
+   "volume": 1502585.3296940005,
+   "activeUsers": 260,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4455686-cb3b1330-537b-4b01-a079-c4f13330b2f3.jpg"
+  },
+  {
+   "rank": "15",
+   "builder": "protrade.tech",
+   "builderCode": "0xe8f62837483813cd7315c30c73d0fe1356ef604cfed294bc4f956fa92871a9bb",
+   "volume": 1310498.699466,
+   "activeUsers": 22,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-9380514-fea77f25-ee32-4a77-92a8-ff67a62fcb5b.png"
+  },
+  {
+   "rank": "16",
+   "builder": "RedotPay",
+   "builderCode": "0x26185f3fedc906019d9f028e253fbea67fe212fb5b02a0cedc57c12ddc9c7805",
+   "volume": 1226479.6149419998,
+   "activeUsers": 1230,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-8337795-be6d875f-2503-4af0-ada1-8cf5f42e960c.png"
+  },
+  {
+   "rank": "17",
+   "builder": "almanac.market",
+   "builderCode": "0x196258757463baebc045d1adc1c9c0a55cad7ac5d09ab7b7e1eb31803d9bfbe0",
+   "volume": 1220846.499212,
+   "activeUsers": 86,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-3963913-81873203-cc83-4d2d-b70e-c5a67f3c4b98.png"
+  },
+  {
+   "rank": "18",
+   "builder": "NautilusTrader",
+   "builderCode": "0x4f2c0bba608033563f74b82300e2ed59f54f8d0de08281031f03fb2c62819e63",
+   "volume": 1155909.4338610005,
+   "activeUsers": 97,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-7738376-600a7b4b-286b-46d9-8188-4993f7b5a1a1.png"
+  },
+  {
+   "rank": "19",
+   "builder": "NoArb",
+   "builderCode": "0x9fb680eff2c1a05610864e3c892b020cb4fd1e11440836cceacae84eda294352",
+   "volume": 982211.2433999999,
+   "activeUsers": 7,
+   "verified": true,
+   "builderLogo": ""
+  },
+  {
+   "rank": "20",
+   "builder": "Polytrader.app",
+   "builderCode": "0x6f5dfb79b61e701021143a9426b4188bda94da794068dec5454a0ac2ec82bc64",
+   "volume": 957171.1016170002,
+   "activeUsers": 5,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-842393-ce7a0991-f3d3-4594-935b-2cef7f0594a5.png"
+  },
+  {
+   "rank": "21",
+   "builder": "Preddy.trade",
+   "builderCode": "0x25d56a25be81b183908e80ccc522e72d4187480a4aa29fa7e4dd1112546fabef",
+   "volume": 807164.7200220001,
+   "activeUsers": 183,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-3317118-3865b431-2746-4a19-8f96-ad4ee13add1e.png"
+  },
+  {
+   "rank": "22",
+   "builder": "PolymarketScan.org - Free Data",
+   "builderCode": "0x7a83214b7f0f7fc9171917d8cfad8814196f50d5e9e49d87bfd58415ae113160",
+   "volume": 620817.148691,
+   "activeUsers": 1,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4621080-790c25cf-229e-47ff-8816-2e971733e449.jpg"
+  },
+  {
+   "rank": "23",
+   "builder": "Tailgate",
+   "builderCode": "0x03d53e4e8daed156c80448931d72b3b6b0b57e1565bfa2855fca74a055f24c08",
+   "volume": 600601.030409,
+   "activeUsers": 311,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4392096-521c9b77-af74-484c-9e81-f17a79141a5c.png"
+  },
+  {
+   "rank": "24",
+   "builder": "Rumor",
+   "builderCode": "0x44cd41c8e0938828f288417db30ef1dbab12f3c5045d93dd2a24d75d439a32a2",
+   "volume": 562507.891333,
+   "activeUsers": 15,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-7970303-f4347845-a935-48da-826a-931353814f77.png"
+  },
+  {
+   "rank": "25",
+   "builder": "Kreo",
+   "builderCode": "0x9fedc0b0702ca6cb294e5321d9491b1e38b8bd2b463a7f7b06df8e6d7553cd18",
+   "volume": 524433.959579,
+   "activeUsers": 307,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-5005416-c803d9c0-038a-4afc-a214-9c16cca376bb.png"
+  },
+  {
+   "rank": "26",
+   "builder": "Pulse Market",
+   "builderCode": "0xf6d1d65e02fc896f5834654997f8daa2ef1841684e53235d896154d4c5f62a36",
+   "volume": 502738.0751350001,
+   "activeUsers": 132,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-5093929-77baba70-c328-4781-8eeb-1b982908e75e.jpg"
+  },
+  {
+   "rank": "27",
+   "builder": "Portex",
+   "builderCode": "0x7229d6d1d5375d6fa9fe19bad35efa356873e9d536e78a6952e68dee01fdf5ae",
+   "volume": 488373.4681379999,
+   "activeUsers": 116,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-8733121-2f85ab34-23c4-430f-91aa-e9c2718d2797.png"
+  },
+  {
+   "rank": "28",
+   "builder": "EVplusAI",
+   "builderCode": "0xb8d6bf0c9ec3c806c30fcb0e8da931f2940a5141cf420394c4b1d82ae7c6d415",
+   "volume": 429485.206179,
+   "activeUsers": 11,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-3323262-d9867b49-8799-4de6-9578-156a291600ef.png"
+  },
+  {
+   "rank": "29",
+   "builder": "polytraderpro",
+   "builderCode": "0x29f8d1998cd4186678d0085cd54072aeefd05bc476ef1844361510d857ac074b",
+   "volume": 406815.738112,
+   "activeUsers": 15,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/polytraderpro.jpeg"
+  },
+  {
+   "rank": "30",
+   "builder": "Polywatchdog.com",
+   "builderCode": "0x8549304c871421937ce57606cb8be1e593511167489d0d02e7e5e3eb874112bb",
+   "volume": 397653.3942910001,
+   "activeUsers": 2,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-6656441-2ce5a47f-30da-4558-881a-476fd42f0b5e.png"
+  },
+  {
+   "rank": "31",
+   "builder": "Polycool",
+   "builderCode": "0x9700262d1ce6bbfde7247f0f849a0814f7faa7496674a221622e06fdb25b0f61",
+   "volume": 396899.26529999997,
+   "activeUsers": 82,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4478609-6488a4c1-92d3-4aec-b894-00c601298893.png"
+  },
+  {
+   "rank": "32",
+   "builder": "Future",
+   "builderCode": "0x2cb0f54d206f483e4bf3a8737b3359de64f569424c7f4ec8e1d577010918d4f8",
+   "volume": 385502.7522010001,
+   "activeUsers": 136,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4494712-67563788-d819-4582-b66e-81fbcffc5a76.png"
+  },
+  {
+   "rank": "33",
+   "builder": "PolyTap Bot",
+   "builderCode": "0xc95d2e7e3ac472e227808ee3929f5d0446d263b4b58cc88eba629148d3f90683",
+   "volume": 367136.0872800001,
+   "activeUsers": 6,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4477172-19e0f470-e357-4b57-8689-a672edfec914.png"
+  },
+  {
+   "rank": "34",
+   "builder": "Almanac Dev Sell Test",
+   "builderCode": "0x830937f45b056a8664783d7d50e7b0f5f188547235a65416fc9367b1f3340b78",
+   "volume": 362312.414995,
+   "activeUsers": 54,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4109282-63fef68d-9494-4960-b607-c95dd7c919c9.png"
+  },
+  {
+   "rank": "35",
+   "builder": "Polygun",
+   "builderCode": "0xd625c78659cda77fc5e1b2c2657ec4ecc9187ec82fbc4a2300337269332c046b",
+   "volume": 347942.93970400013,
+   "activeUsers": 302,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4209153-39bd4d88-74c5-4446-9ee6-28b62c5db06f.png"
+  },
+  {
+   "rank": "36",
+   "builder": "Bitget Wallet",
+   "builderCode": "0x9e6b4ca0e5b559c5a3683b66e0b82df37abff18ee33b2ed25837567f2029825a",
+   "volume": 303549.28824900003,
+   "activeUsers": 316,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-6685340-df966cb1-99b3-4100-bcd8-d606662b9c78.png"
+  },
+  {
+   "rank": "37",
+   "builder": "Olympusx.app",
+   "builderCode": "0x98846a9b6a378da7c0653261d64f1aecb32c9f8ac9d0302ab659d75ae3ae72ec",
+   "volume": 285870.04801500007,
+   "activeUsers": 149,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-3206520-9e273d56-6dd7-44d7-b394-6e21f2022875.png"
+  },
+  {
+   "rank": "38",
+   "builder": "Deepcoin",
+   "builderCode": "0x290cc664cf4e73a74eb00bf68930b911534dc89cd7dec354693b0f16796dd8c4",
+   "volume": 234273.14354200003,
+   "activeUsers": 1,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-5633836-00c460b8-6fdb-4e93-b4ca-4def1d9076b0.png"
+  },
+  {
+   "rank": "39",
+   "builder": "Amplifi",
+   "builderCode": "0xfa548f67961bcd0be1830bcd3e6b750981bd093bfbdbb52e6ac4348a4cdce3d3",
+   "volume": 230189.61357299995,
+   "activeUsers": 41,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-8050338-cecbf2bf-35bc-4cb6-8fb9-4fb2730ca343.png"
+  },
+  {
+   "rank": "40",
+   "builder": "Share",
+   "builderCode": "0x74ca2021bf645af182ac7049edccc6d079d7c3bd428ec66806fd89ee9d5898ec",
+   "volume": 218128.56781100004,
+   "activeUsers": 43,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-5128404-69573be2-2677-4528-b41b-c40280779dc8.png"
+  },
+  {
+   "rank": "41",
+   "builder": "TerminalUp",
+   "builderCode": "0x055df23866e2c11faefd27a94ff2ba223c068d60ae2d21c91f2f7a85810c720f",
+   "volume": 208373.11268800008,
+   "activeUsers": 1,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-8216914-3f505e83-0eb4-49a6-9daa-0dd863491c88.png"
+  },
+  {
+   "rank": "42",
+   "builder": "Bullpen",
+   "builderCode": "0x2a80e1ef1d7842f27f2e6be0972bb708b9a135c38860dbe73c27c3486c34f4de",
+   "volume": 205193.85341200003,
+   "activeUsers": 262,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-3585491-c917925a-907c-4b9b-a05a-b20e7e2a0fa4.png"
+  },
+  {
+   "rank": "43",
+   "builder": "Phemex",
+   "builderCode": "0x0b4528991194951b3570dd3578d1c5b3ad700ff3ca9b7c945306f2a91f490bab",
+   "volume": 180713.831176,
+   "activeUsers": 1,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-7409043-5f561f9f-b83b-473f-8106-2903a862b35f.png"
+  },
+  {
+   "rank": "44",
+   "builder": "doxa",
+   "builderCode": "0x280c98c52cd474cb7b0b7ab0f3b03ce3c5f57807f08582d54ad8a01b024ddff2",
+   "volume": 174205.678796,
+   "activeUsers": 1,
+   "verified": true,
+   "builderLogo": ""
+  },
+  {
+   "rank": "45",
+   "builder": "Predex.dev",
+   "builderCode": "0x221b6a7ce5913b8162f55b8195d96879a9a8f9aff257e8dc1da7862272bb7746",
+   "volume": 161683.05304199998,
+   "activeUsers": 14,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-6476657-bd7f4c78-b5da-4c42-a171-7014af229ec4.png"
+  },
+  {
+   "rank": "46",
+   "builder": "polyinit.com",
+   "builderCode": "0xde2885d1fca3c0834d92b223139c03303eb88234374eeba4f92772577d11349c",
+   "volume": 158645.10761399998,
+   "activeUsers": 40,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-8423633-b69b6461-9714-4e24-a9e9-052ad795f808.png"
+  },
+  {
+   "rank": "47",
+   "builder": "Polyburg",
+   "builderCode": "0x4d1a90fe58b930f41918bc590e4f42116dc669fdf179cbf9247253671b43e136",
+   "volume": 158628.62369700003,
+   "activeUsers": 23,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4024296-8f9fe295-8bd2-4e22-bafa-f24e6457d896.jpg"
+  },
+  {
+   "rank": "48",
+   "builder": "FORS",
+   "builderCode": "0x1eb72e03ab449a2d2083b7bca2287513436a3599288d19f7a827e630be59a3d9",
+   "volume": 149989.701281,
+   "activeUsers": 1,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4290712-cc46ceb8-c04a-4c3b-99b7-a687c2cda778.png"
+  },
+  {
+   "rank": "49",
+   "builder": "SpreadDesk",
+   "builderCode": "0x4afed21cc4e79c2126d64d7a6121a2a6581a42529fe4fc64bb1dcdab63182ea1",
+   "volume": 146914.12044700005,
+   "activeUsers": 7,
+   "verified": true,
+   "builderLogo": ""
+  },
+  {
+   "rank": "50",
+   "builder": "SafePal",
+   "builderCode": "0x26ba6b3052e912e3b6e91413268825dcb1c09fab29849ac6a44259029fafe832",
+   "volume": 138086.43199900008,
+   "activeUsers": 56,
+   "verified": true,
+   "builderLogo": ""
+  }
+ ],
+ "MONTH": [
+  {
+   "rank": "1",
+   "builder": "betmoar",
+   "builderCode": "0xceebf77a833b30520287ddd9478ff51abbdffa30aa90a8d655dba0e8a79ce0c1",
+   "volume": 40041157.308091134,
+   "activeUsers": 386,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/betmoar_2.png"
+  },
+  {
+   "rank": "2",
+   "builder": "Gate",
+   "builderCode": "0x2c6624a23b16a2a69acd14c87b7fc03906870c851fa0a7b7f9d7be0fbbedea8a",
+   "volume": 26118460.824434992,
+   "activeUsers": 11,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-6204678-8b397176-c77c-4533-9620-8037e82399cf.png"
+  },
+  {
+   "rank": "3",
+   "builder": "traderline",
+   "builderCode": "0x6b0e773fada0a2ec67c956b25a737d353a534ea33db56c717ba7854346c67984",
+   "volume": 24852137.467206005,
+   "activeUsers": 261,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-1377213-24116eb2-24b0-429e-89a5-4fd2b6182074.png"
+  },
+  {
+   "rank": "4",
+   "builder": "SpreadCore.xyz",
+   "builderCode": "0xbb4ee21f97774d5810e0d29e47d81524f0183693d42db63b3ebb65a89eff4fa6",
+   "volume": 14882515.940098,
+   "activeUsers": 69,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4211034-1addb252-355d-4f61-994c-54fbb7bdc445.jpg"
+  },
+  {
+   "rank": "5",
+   "builder": "MetaMask",
+   "builderCode": "0x11a22276beb720e66a072cba8b8e74cded60afda510af535b947b81a1b81a883",
+   "volume": 14778752.708671007,
+   "activeUsers": 1368,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4012248-5ad05c5e-f4c3-4d9f-882a-78bcb1b30cfe.jpg"
+  },
+  {
+   "rank": "6",
+   "builder": "MagicMarkets",
+   "builderCode": "0xd1d9dd6983c40006b0dc8eab84a41ac9a4f27643296178479ffbebbc01ab7bde",
+   "volume": 8702736.391823001,
+   "activeUsers": 1,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-5148537-b5dbf263-8d5f-41d7-bba1-387bfa17075c.png"
+  },
+  {
+   "rank": "7",
+   "builder": "PolyHelper.io",
+   "builderCode": "0xb05677aa676cd5aeab7e8d85ef83836ee1bf4e3de5519d5bbb6594484b51a805",
+   "volume": 7475411.747258997,
+   "activeUsers": 56,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-5893977-4a331aa3-34df-45ca-b107-9ecdae4de2cf.jpg"
+  },
+  {
+   "rank": "8",
+   "builder": "polymtrade",
+   "builderCode": "0x7f8b6b088b6d74c2852fc86c796dca07b44eed6fb3daf5e6b59f7c364db14528",
+   "volume": 6809907.710271999,
+   "activeUsers": 2173,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/polymtrade.png"
+  },
+  {
+   "rank": "9",
+   "builder": "Sharktool",
+   "builderCode": "0x873590b37cc721a8194d6d905e31d41f7f093312907ba9a5cb83969589544418",
+   "volume": 5507331.868701003,
+   "activeUsers": 53,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-9347859-3f5f861c-3b8b-489f-9298-1e88c45f0baf.png"
+  },
+  {
+   "rank": "10",
+   "builder": "Sharkbetting.com",
+   "builderCode": "0xf3a209e3ea161180c4e900ffdba5b35d3434d60136072f49f5f54337c63f452c",
+   "volume": 5295273.976374001,
+   "activeUsers": 2,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-1323300-7d47ebfd-c3f6-41cc-8ec2-af6fc37b6008.png"
+  },
+  {
+   "rank": "11",
+   "builder": "Jupiter",
+   "builderCode": "0x8c359a3a4c67311bbc1bdb59dac1dce23b15492db3c193942991e33b3515439d",
+   "volume": 4271241.006230992,
+   "activeUsers": 1,
+   "verified": true,
+   "builderLogo": ""
+  },
+  {
+   "rank": "12",
+   "builder": "PolyCop",
+   "builderCode": "0x4898df15ec6590495dc6c0fedf951ade3e64001d47f9caf44a64e86fc11959df",
+   "volume": 3986135.5386609966,
+   "activeUsers": 692,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4043800-ced7ecde-0754-46a1-8a16-bb6c338fbf39.png"
+  },
+  {
+   "rank": "13",
+   "builder": "RedotPay",
+   "builderCode": "0x26185f3fedc906019d9f028e253fbea67fe212fb5b02a0cedc57c12ddc9c7805",
+   "volume": 3162721.6626839973,
+   "activeUsers": 2122,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-8337795-be6d875f-2503-4af0-ada1-8cf5f42e960c.png"
+  },
+  {
+   "rank": "14",
+   "builder": "standtrade",
+   "builderCode": "0x13600b294191fc92924bb3ce4b969c1e7e2bab8f4c93c3fc6d0a51733df3c060",
+   "volume": 3097951.676422001,
+   "activeUsers": 112,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/standtrade.png"
+  },
+  {
+   "rank": "15",
+   "builder": "Bagel",
+   "builderCode": "0xe8358d121a1a1a849f5d81ea46d50efd006adf0ed2e7704b19c47bb7bec72b87",
+   "volume": 2975210.0220089997,
+   "activeUsers": 352,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4455686-cb3b1330-537b-4b01-a079-c4f13330b2f3.jpg"
+  },
+  {
+   "rank": "16",
+   "builder": "protrade.tech",
+   "builderCode": "0xe8f62837483813cd7315c30c73d0fe1356ef604cfed294bc4f956fa92871a9bb",
+   "volume": 2500654.3401579997,
+   "activeUsers": 30,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-9380514-fea77f25-ee32-4a77-92a8-ff67a62fcb5b.png"
+  },
+  {
+   "rank": "17",
+   "builder": "NautilusTrader",
+   "builderCode": "0x4f2c0bba608033563f74b82300e2ed59f54f8d0de08281031f03fb2c62819e63",
+   "volume": 2160374.3773000026,
+   "activeUsers": 116,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-7738376-600a7b4b-286b-46d9-8188-4993f7b5a1a1.png"
+  },
+  {
+   "rank": "18",
+   "builder": "almanac.market",
+   "builderCode": "0x196258757463baebc045d1adc1c9c0a55cad7ac5d09ab7b7e1eb31803d9bfbe0",
+   "volume": 2097406.7947970005,
+   "activeUsers": 87,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-3963913-81873203-cc83-4d2d-b70e-c5a67f3c4b98.png"
+  },
+  {
+   "rank": "19",
+   "builder": "Polytrader.app",
+   "builderCode": "0x6f5dfb79b61e701021143a9426b4188bda94da794068dec5454a0ac2ec82bc64",
+   "volume": 1964476.449187,
+   "activeUsers": 5,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-842393-ce7a0991-f3d3-4594-935b-2cef7f0594a5.png"
+  },
+  {
+   "rank": "20",
+   "builder": "NoArb",
+   "builderCode": "0x9fb680eff2c1a05610864e3c892b020cb4fd1e11440836cceacae84eda294352",
+   "volume": 1721167.9174879997,
+   "activeUsers": 8,
+   "verified": true,
+   "builderLogo": ""
+  },
+  {
+   "rank": "21",
+   "builder": "Kreo",
+   "builderCode": "0x9fedc0b0702ca6cb294e5321d9491b1e38b8bd2b463a7f7b06df8e6d7553cd18",
+   "volume": 1688295.4746519998,
+   "activeUsers": 429,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-5005416-c803d9c0-038a-4afc-a214-9c16cca376bb.png"
+  },
+  {
+   "rank": "22",
+   "builder": "Tailgate",
+   "builderCode": "0x03d53e4e8daed156c80448931d72b3b6b0b57e1565bfa2855fca74a055f24c08",
+   "volume": 1447225.0519470002,
+   "activeUsers": 442,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4392096-521c9b77-af74-484c-9e81-f17a79141a5c.png"
+  },
+  {
+   "rank": "23",
+   "builder": "Preddy.trade",
+   "builderCode": "0x25d56a25be81b183908e80ccc522e72d4187480a4aa29fa7e4dd1112546fabef",
+   "volume": 1263820.1566180002,
+   "activeUsers": 235,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-3317118-3865b431-2746-4a19-8f96-ad4ee13add1e.png"
+  },
+  {
+   "rank": "24",
+   "builder": "polytraderpro",
+   "builderCode": "0x29f8d1998cd4186678d0085cd54072aeefd05bc476ef1844361510d857ac074b",
+   "volume": 1156644.7877110003,
+   "activeUsers": 21,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/polytraderpro.jpeg"
+  },
+  {
+   "rank": "25",
+   "builder": "PolymarketScan.org - Free Data",
+   "builderCode": "0x7a83214b7f0f7fc9171917d8cfad8814196f50d5e9e49d87bfd58415ae113160",
+   "volume": 1117929.723216,
+   "activeUsers": 1,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4621080-790c25cf-229e-47ff-8816-2e971733e449.jpg"
+  },
+  {
+   "rank": "26",
+   "builder": "Rumor",
+   "builderCode": "0x44cd41c8e0938828f288417db30ef1dbab12f3c5045d93dd2a24d75d439a32a2",
+   "volume": 982074.220553,
+   "activeUsers": 23,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-7970303-f4347845-a935-48da-826a-931353814f77.png"
+  },
+  {
+   "rank": "27",
+   "builder": "Pulse Market",
+   "builderCode": "0xf6d1d65e02fc896f5834654997f8daa2ef1841684e53235d896154d4c5f62a36",
+   "volume": 950127.0021070001,
+   "activeUsers": 182,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-5093929-77baba70-c328-4781-8eeb-1b982908e75e.jpg"
+  },
+  {
+   "rank": "28",
+   "builder": "EVplusAI",
+   "builderCode": "0xb8d6bf0c9ec3c806c30fcb0e8da931f2940a5141cf420394c4b1d82ae7c6d415",
+   "volume": 930027.9828320001,
+   "activeUsers": 18,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-3323262-d9867b49-8799-4de6-9578-156a291600ef.png"
+  },
+  {
+   "rank": "29",
+   "builder": "Bitget Wallet",
+   "builderCode": "0x9e6b4ca0e5b559c5a3683b66e0b82df37abff18ee33b2ed25837567f2029825a",
+   "volume": 744846.1966220002,
+   "activeUsers": 496,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-6685340-df966cb1-99b3-4100-bcd8-d606662b9c78.png"
+  },
+  {
+   "rank": "30",
+   "builder": "Polywatchdog.com",
+   "builderCode": "0x8549304c871421937ce57606cb8be1e593511167489d0d02e7e5e3eb874112bb",
+   "volume": 712814.0229959999,
+   "activeUsers": 2,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-6656441-2ce5a47f-30da-4558-881a-476fd42f0b5e.png"
+  },
+  {
+   "rank": "31",
+   "builder": "Shard.bet",
+   "builderCode": "0xff3c26653ac29a9986908a1b2ebfb92d137d9f8eb4ac61967286b60f9e907118",
+   "volume": 626030.887965,
+   "activeUsers": 4,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4120679-a8e371c3-7cc6-4be2-89a2-08d20a07dd42.png"
+  },
+  {
+   "rank": "32",
+   "builder": "Future",
+   "builderCode": "0x2cb0f54d206f483e4bf3a8737b3359de64f569424c7f4ec8e1d577010918d4f8",
+   "volume": 608373.8019750002,
+   "activeUsers": 202,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4494712-67563788-d819-4582-b66e-81fbcffc5a76.png"
+  },
+  {
+   "rank": "33",
+   "builder": "Olympusx.app",
+   "builderCode": "0x98846a9b6a378da7c0653261d64f1aecb32c9f8ac9d0302ab659d75ae3ae72ec",
+   "volume": 581403.7852670002,
+   "activeUsers": 168,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-3206520-9e273d56-6dd7-44d7-b394-6e21f2022875.png"
+  },
+  {
+   "rank": "34",
+   "builder": "PolyTap Bot",
+   "builderCode": "0xc95d2e7e3ac472e227808ee3929f5d0446d263b4b58cc88eba629148d3f90683",
+   "volume": 576775.924069,
+   "activeUsers": 8,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4477172-19e0f470-e357-4b57-8689-a672edfec914.png"
+  },
+  {
+   "rank": "35",
+   "builder": "Share",
+   "builderCode": "0x74ca2021bf645af182ac7049edccc6d079d7c3bd428ec66806fd89ee9d5898ec",
+   "volume": 560104.2370399999,
+   "activeUsers": 60,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-5128404-69573be2-2677-4528-b41b-c40280779dc8.png"
+  },
+  {
+   "rank": "36",
+   "builder": "Polygun",
+   "builderCode": "0xd625c78659cda77fc5e1b2c2657ec4ecc9187ec82fbc4a2300337269332c046b",
+   "volume": 555845.0903790004,
+   "activeUsers": 440,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4209153-39bd4d88-74c5-4446-9ee6-28b62c5db06f.png"
+  },
+  {
+   "rank": "37",
+   "builder": "Portex",
+   "builderCode": "0x7229d6d1d5375d6fa9fe19bad35efa356873e9d536e78a6952e68dee01fdf5ae",
+   "volume": 522046.7518059997,
+   "activeUsers": 148,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-8733121-2f85ab34-23c4-430f-91aa-e9c2718d2797.png"
+  },
+  {
+   "rank": "38",
+   "builder": "Polycool",
+   "builderCode": "0x9700262d1ce6bbfde7247f0f849a0814f7faa7496674a221622e06fdb25b0f61",
+   "volume": 518468.18415100017,
+   "activeUsers": 125,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4478609-6488a4c1-92d3-4aec-b894-00c601298893.png"
+  },
+  {
+   "rank": "39",
+   "builder": "SpreadDesk",
+   "builderCode": "0x4afed21cc4e79c2126d64d7a6121a2a6581a42529fe4fc64bb1dcdab63182ea1",
+   "volume": 471186.37757300015,
+   "activeUsers": 12,
+   "verified": true,
+   "builderLogo": ""
+  },
+  {
+   "rank": "40",
+   "builder": "Almanac Dev Sell Test",
+   "builderCode": "0x830937f45b056a8664783d7d50e7b0f5f188547235a65416fc9367b1f3340b78",
+   "volume": 425165.425095,
+   "activeUsers": 61,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-4109282-63fef68d-9494-4960-b607-c95dd7c919c9.png"
+  },
+  {
+   "rank": "41",
+   "builder": "TerminalUp",
+   "builderCode": "0x055df23866e2c11faefd27a94ff2ba223c068d60ae2d21c91f2f7a85810c720f",
+   "volume": 413476.94677299995,
+   "activeUsers": 2,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-8216914-3f505e83-0eb4-49a6-9daa-0dd863491c88.png"
+  },
+  {
+   "rank": "42",
+   "builder": "Deepcoin",
+   "builderCode": "0x290cc664cf4e73a74eb00bf68930b911534dc89cd7dec354693b0f16796dd8c4",
+   "volume": 409179.98834400007,
+   "activeUsers": 1,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-5633836-00c460b8-6fdb-4e93-b4ca-4def1d9076b0.png"
+  },
+  {
+   "rank": "43",
+   "builder": "SafePal",
+   "builderCode": "0x26ba6b3052e912e3b6e91413268825dcb1c09fab29849ac6a44259029fafe832",
+   "volume": 404900.7809160001,
+   "activeUsers": 102,
+   "verified": true,
+   "builderLogo": ""
+  },
+  {
+   "rank": "44",
+   "builder": "Bullpen",
+   "builderCode": "0x2a80e1ef1d7842f27f2e6be0972bb708b9a135c38860dbe73c27c3486c34f4de",
+   "volume": 400090.61269000004,
+   "activeUsers": 502,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-3585491-c917925a-907c-4b9b-a05a-b20e7e2a0fa4.png"
+  },
+  {
+   "rank": "45",
+   "builder": "Amplifi",
+   "builderCode": "0xfa548f67961bcd0be1830bcd3e6b750981bd093bfbdbb52e6ac4348a4cdce3d3",
+   "volume": 346721.5334379999,
+   "activeUsers": 50,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-8050338-cecbf2bf-35bc-4cb6-8fb9-4fb2730ca343.png"
+  },
+  {
+   "rank": "46",
+   "builder": "Phemex",
+   "builderCode": "0x0b4528991194951b3570dd3578d1c5b3ad700ff3ca9b7c945306f2a91f490bab",
+   "volume": 346517.201473,
+   "activeUsers": 1,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-7409043-5f561f9f-b83b-473f-8106-2903a862b35f.png"
+  },
+  {
+   "rank": "47",
+   "builder": "Predex.dev",
+   "builderCode": "0x221b6a7ce5913b8162f55b8195d96879a9a8f9aff257e8dc1da7862272bb7746",
+   "volume": 335300.7017130001,
+   "activeUsers": 21,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-6476657-bd7f4c78-b5da-4c42-a171-7014af229ec4.png"
+  },
+  {
+   "rank": "48",
+   "builder": "Coinpilot",
+   "builderCode": "0xb23e2d44d1c28bf12bdfc596a5fbce37006f8960f83f959ab82da16f25f64a3c",
+   "volume": 326392.2965910001,
+   "activeUsers": 41,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-5906493-d5475fd8-e7e5-4478-9680-7b495912a98e.png"
+  },
+  {
+   "rank": "49",
+   "builder": "polyinit.com",
+   "builderCode": "0xde2885d1fca3c0834d92b223139c03303eb88234374eeba4f92772577d11349c",
+   "volume": 305727.29702699994,
+   "activeUsers": 47,
+   "verified": true,
+   "builderLogo": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-8423633-b69b6461-9714-4e24-a9e9-052ad795f808.png"
+  },
+  {
+   "rank": "50",
+   "builder": "ZOOMEX",
+   "builderCode": "0x68e403da58f414166b8b860cfce116f9b8b88990116eee267a96d903dc453a67",
+   "volume": 300805.5847370001,
+   "activeUsers": 1,
+   "verified": true,
+   "builderLogo": ""
+  }
+ ]
+}
