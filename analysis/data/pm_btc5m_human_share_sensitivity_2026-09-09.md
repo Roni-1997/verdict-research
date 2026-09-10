@@ -129,3 +129,31 @@ Findings.
 Working rule from here: combined. Bot = 300+ fills, or 30+ fills with no 6h gap, or two-sided buying in 40%+ of
 windows, or a dense (50%+ of windows) share-typed run of 4h+ that then stops. Bots 68 to 69% of taker $ on both days.
 
+## Does a consistent bedtime identify humans? Sep 8 vs Sep 9 (2026-09-10)
+
+Proposal tested: classify by whether the wallet sleeps at about the same time every day, with no fills threshold.
+Data: all taker fills on Sep 8 (509,967 fills, 7,316 wallets) and Sep 9. 4,687 wallets appear on both days and hold
+92% of Sep 9 taker dollars. Bedtime = midpoint of the longest gap; consistency = circular difference in hours.
+
+| Group (slept 6h+ on both days, 30+ fills each day) | Wallets | Sep 9 $ | Bedtime within 2h | Within 4h |
+|---|---|---|---|---|
+| Session traders, human under the combined rule both days | 367 | 9.1% | 43% | 66% |
+| Sleeping wallets, bot under the combined rule both days | 75 | 2.5% | 36% | 56% |
+| Random re-pairing of the same wallets (baseline) | | | 16% | 34% |
+
+Humans are more consistent than chance but far from clockwork: the median day-to-day change in gap length is 2.5
+hours and the gap itself is 11 to 13 hours, so the "sleep" is the gap between sessions, not a night's sleep, and
+sessions move. Sleeping machines are nearly as consistent (36% within 2h), because they run on schedules too.
+Across the consistency bands, exact-dollar share (45 to 67%), two-sidedness (6 to 13%) and density (0.27 to 0.34)
+do not trend, so an inconsistent bedtime does not flag a machine. A rule "sleeper with a 4h+ bedtime shift and
+share-typed orders = bot" would add 40 wallets and 0.19% of dollars.
+
+The sleeping two-sided machines (222 wallets, 3.4% of Sep 9 $) are not one-off runs: of the 126 seen on Sep 8, 92%
+slept that day too, 56% were two-sided again, only 8% ran all day. They are scheduled part-day machines, caught by
+two-sidedness and share sizing, not by sleep timing. Class stickiness across the two days under the combined rule:
+66.5% of two-day dollars bot on both days, 22.9% human on both, 10.5% switch.
+
+Conclusion: bedtime consistency is real but weak (2.7x chance at 2h) and does not separate scheduled machines from
+people. The fills threshold is dispensable below 300; the sleep gap plus two-sidedness, share sizing and a dense
+4h+ run do the classification. The combined rule stands.
+
