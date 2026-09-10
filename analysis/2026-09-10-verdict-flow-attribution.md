@@ -1,0 +1,150 @@
+# Verdict flow attribution: who trades short-term crypto binaries, in the seven-cohort framework
+
+Date: 2026-09-10. Scope: Polymarket BTC 5-minute up/down markets (series 10684), all 288 windows of
+2026-09-09 UTC, both legs of every fill (1,383,413 records: 476,400 taker legs, 907,013 maker legs, 8,328
+wallets, $14.28M touched, $7.14M single-counted). Aug 30 and Sep 8 are being re-pulled the same way and
+will be appended. Classification follows [Roni-1997/polymarket-segmentation](https://github.com/Roni-1997/polymarket-segmentation):
+maker share of touched volume (70%+ high, 30-70% mid, under 30% low) by cadence (100+ fills fast, 10-100
+systematic, under 10 discretionary), Retail at any maker share under 10 fills. Proxy-wallet level, single
+day, so cadence is fills that day. Labels are behavioural, not identity. This document supersedes the
+2026-09-10 Codex report "Verdict Flow Attribution" for the participant analysis; its evidence-boundary and
+GTM sections are condensed in sections 6 and 7. Scripts: `scripts/pm_pull_btc5m_both_legs.py`,
+`scripts/pm_cohorts_v1_v2_2026-09-10.py`. Results: `data/pm_btc5m_cohorts_v1_2026-09-09.json`, `_v2_`.
+
+## 1. The claim, in the form that survives diligence
+
+Volume and depth on short-term crypto binaries are machines. Market makers and fast machines are 63% of
+touched volume on Polymarket BTC 5m and 95% of the taker side is Bots plus Algo under the segmentation
+grid. Strict Retail, under 10 fills a day, is 1.3% of touched volume. A venue does not need a consumer
+funnel to get liquidity: the 5m product opened at full size on its second day with 46% bot share.
+
+What every such venue also has is a minority of paying flow. People, meaning Retail plus tool-assisted
+session traders, are 17% of touched volume and 29% of the taker side, and they lose about $76k a day on
+$7M of taker premium. Machines net about $42k and market makers about $33k. Machine-against-machine
+trading is zero-sum before costs. When Polymarket's new-wallet inflow fell 80%, bot dollars fell 43%.
+
+So the investor sentence is: we do not need our own retail app, because the machines are the liquidity
+and they arrive on their own; we do need paying flow, and ours comes from HL-native traders one click
+away, partner frontends carrying our builder code, and a maker pool that bridges the gap. The machines
+are the liquidity. The frontends are the customers.
+
+## 2. Polymarket BTC 5m in the seven-cohort grid (2026-09-09)
+
+| Cohort | Wallets | % touched | % maker side | % taker side | $ per fill | PnL to settlement per $ | PnL $ |
+|---|---|---|---|---|---|---|---|
+| Pro-MM | 545 | 35.5% | 71.8% | 2.7% | 7 | +0.66% | +33,254 |
+| Fast-taker | 711 | 34.6% | 6.6% | 59.9% | 14 | +0.32% | +15,806 |
+| Hybrid-bot | 171 | 15.1% | 17.4% | 13.1% | 12 | -0.11% | -2,439 |
+| Systematic-taker | 2,742 | 11.3% | 0.6% | 20.9% | 17 | -2.01% | -32,274 |
+| Mid-MM | 435 | 1.2% | 2.4% | 0.2% | 10 | -0.56% | -983 |
+| Systematic-mixed | 301 | 1.0% | 1.0% | 1.0% | 13 | -0.61% | -879 |
+| Retail | 3,423 | 1.3% | 0.3% | 2.2% | 15 | -6.85% | -12,485 |
+
+Rollup, against the segmentation repo's published figures (venue-wide and crypto category, May 2026):
+
+| Persona | BTC 5m Sep 9, % touched | % maker side | % taker side | PnL $ | Repo venue-wide May | Repo crypto May |
+|---|---|---|---|---|---|---|
+| MMs (Pro-MM, Mid-MM) | 36.7% | 74.2% | 2.9% | +32,271 | 38.4% | 38% |
+| Bots plus Algo | 62.0% | 25.6% | 94.9% | -19,786 | 56.3% | 58% |
+| Retail | 1.3% | 0.3% | 2.2% | -12,485 | 5.3% | 5% |
+
+The BTC 5m product is the venue's fingerprint with the retail share squeezed further. Maker side is
+Pro-MM 72% here against 59% for crypto venue-wide; taker side is Fast-taker 60% against 49%.
+
+## 3. Who pays whom: PnL by cohort
+
+PnL to settlement is computed per leg: a buy of an outcome pays 1 if that outcome wins, a sell the
+reverse; summed over both legs it is zero by construction, so the table shows transfers between cohorts
+before fees and rewards. Polymarket charged no taker fee on these markets. Rewards are not included.
+
+The transfer runs from Systematic-taker (-$32k) and Retail (-$12k) to Pro-MM (+$33k) and Fast-taker
+(+$16k). The Bots plus Algo persona nets negative as a whole because it contains both the payers
+(Systematic-taker) and the earners (Fast-taker). That is the segmentation repo's open question from its
+caveat 7 and its trend section, answered for this product: the systematic-taker cohort is uninformed
+flow by result, and it is where most of the money is lost.
+
+## 4. Where the grid is blunt, and the v2 split
+
+The v1 axes put humans with tools and part-day machines in the same cells. A sharper operation-mode axis
+(unattended: no 6h gap or 16+ active hours; part-day machine: two-sided in 40%+ of windows or a dense
+share-typed run of 4h+; session: neither) and a directionality axis (neutral = both sides bought in 40%+ of
+windows) give six cohorts. Specification with evidence: `data/pm_cohort_v2_spec_2026-09-10.md`.
+
+| v2 cohort | Wallets | % touched | % maker side | % taker side | PnL per $ | PnL $ | Exact-dollar buys | Sells | Active hours |
+|---|---|---|---|---|---|---|---|---|---|
+| Pro-MM | 687 | 34.3% | 69.7% | 2.3% | +0.77% | +37,830 | 3% | 8% | 20 |
+| Part-time MM | 240 | 2.4% | 4.4% | 0.5% | -1.31% | -4,390 | 4% | 7% | 6 |
+| Neutral bot | 376 | 25.0% | 14.3% | 34.7% | +1.38% | +49,480 | 10% | 6% | 9 |
+| Directional bot | 1,107 | 21.5% | 8.1% | 33.6% | -0.23% | -7,158 | 6% | 7% | 18 |
+| Session trader | 2,374 | 15.3% | 3.1% | 26.3% | -2.76% | -60,356 | 41% | 27% | 5 |
+| Retail | 3,544 | 1.5% | 0.4% | 2.5% | -7.16% | -15,406 | 0% | 19% | 1 |
+
+Rollup: MMs 36.7% of touched (+$33k), Machines 46.5% (+$42k), People 16.8% (-$76k). The validation rule
+holds on this day: Neutral bot and Pro-MM positive, Directional bot near zero, Session trader negative,
+Retail most negative. The behavioural columns separate cleanly: session traders and retail size in
+dollars and exit positions, machines size in shares and hold.
+
+Crosswalk, share of each v1 cohort's touched dollars:
+
+| v1 cohort | Goes to |
+|---|---|
+| Pro-MM (35.5%) | Pro-MM 95%, Part-time MM 5% |
+| Fast-taker (34.6%) | Neutral bot 46%, Directional bot 39%, Session trader 15% |
+| Hybrid-bot (15.1%) | Neutral bot 57%, Directional bot 34%, Session trader 10% |
+| Systematic-taker (11.3%) | Session trader 71%, Directional bot 24%, Neutral bot 3% |
+| Mid-MM (1.2%) | Part-time MM 56%, Pro-MM 42% |
+| Systematic-mixed (1.0%) | Session trader 66%, Directional bot 24% |
+| Retail (1.3%) | Retail 100% |
+
+Fast-taker is the cell that most needed splitting: 46% of its dollars are market-neutral machines that
+earn, 39% directional machines that do not, 15% people.
+
+## 5. Kalshi
+
+Kalshi's public tape has prices, sizes, timestamps and taker side, no identities and no channel. The
+API accepts fractional contract counts (fixed-point strings, fractional trading on for every market since
+2026-07-09), so order shape does not identify broker or app customers. No cohort grid can be built on it
+and no automation share follows. What it does show, over 13 sampled days: every taker size class is
+negative after Kalshi's fee of 0.07 x p x (1-p), so a Polymarket-style profitable taker-machine population
+cannot exist there. Use Kalshi as the fee-model comparison, not as evidence about who trades.
+
+## 6. What this means for Verdict
+
+- **Liquidity is not the scarce input; paying flow is.** Recruit market makers and neutral machines with
+  a reliable feed, cancels and settlement, and expect them within days. Plan the paying flow explicitly:
+  HL-native directional traders, partner frontends via builder codes (Polymarket routes about 15% of its
+  volume through 50 third-party frontends), and the maker pool as a bridge, not a business model.
+- **No complete-set arbitrage on Verdict.** HIP-4 outcome markets are mirror books: buying YES is selling NO
+  on the same book. The A plus B under 1 persona does not exist here. Do not pitch it.
+- **Polymarket's machines are not migrating.** Zero of the top 100 Polymarket wallets are active on HIP-4
+  (segmentation repo, cross-venue check). The observed path is HL perps traders into HIP-4.
+- **Fees decide which machines you host.** Zero taker fee invites the neutral stale-quote machines that
+  earn +1.4% per dollar off makers and people; Kalshi's 1.75c at even odds removes that edge. Verdict launches
+  at fee scale 0 with no maker rebates on outcome markets, so settlement design (60-second CF average, dead
+  band, second source) is what protects makers until a fee exists.
+- **Contract compatibility before cross-venue volume.** A CF Benchmarks 60-second average is not the same
+  instrument as a Chainlink 60-second TWAP or a Hyperliquid mark. Write the equivalence spec before
+  projecting arbitrage demand.
+- **Recruit makers and takers together, then measure after incentives.** Paired pilot on a small contract
+  set, signed orders and fills recorded end to end, continued use tracked through at least one full weekly
+  cycle and one incentive step-down. Scorecard: repeat fee-paying strategies, depth at agreed sizes, LP
+  profitability after hedges and rewards, venue revenue after incentives, rejected orders and settlement
+  failures, concentration by firm.
+
+## 7. Evidence boundaries
+
+- Cohorts are behaviour over one UTC day at proxy-wallet level. Owner aggregation (Dune
+  `users_address_lookup`) would merge multi-proxy firms and lower the machine wallet counts; dollar shares
+  would not move much. Multi-day assignment (modal cohort) is the right unit once Aug 30 and Sep 8 land.
+- Two of 288 markets hit the data-api pagination limit at 11,000 records and are truncated.
+- PnL is gross settlement markout per leg, no fees (none charged), no rewards, no positions carried in or
+  out of the day, no external hedges. It measures transfer between cohorts on the venue, not firm profit.
+- No identities. "Session trader" and "Retail" are inferred from sleep gap, dollar-typed sizing and
+  early exits; "Neutral bot" from two-sided buying. Reaction latency, the decisive test for machines,
+  needs a millisecond capture of the CLOB websocket; public timestamps are whole seconds.
+- Historical tables in `2026-09-04-who-trades-short-term-btc-binaries.md` use the older
+  bot/heavy/manual labels; the mapping is in its section 0.
+
+Sources: Polymarket data-api `/trades` (takerOnly true and false) and gamma `/events?series_id=10684`;
+Roni-1997/polymarket-segmentation README and findings (May 2026); Kalshi API fixed-point documentation;
+Hyperliquid HIP-4 documentation (mirror books); Verdict launch board (fee scale, maker pool).
