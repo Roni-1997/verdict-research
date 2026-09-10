@@ -97,3 +97,35 @@ check: it was not used to build either rule, and both rules separate a class tha
 Bias to note: a bot that started or stopped mid-day shows a long gap and is counted as a sleeper, so the revised
 share is a floor on machines, not a ceiling.
 
+## Can the fills threshold go? Sleep alone, sleep plus density, and the scheduled-bot objection (2026-09-10)
+
+Objection tested: "drop the fills filter and use the sleep gap alone", with the counter-objection that a bot run only
+during US stock hours also sleeps. Density = windows traded divided by 5-minute windows available inside the wallet's
+waking span. Scripts: `scripts/pm_features_and_rules_2026-09-10.py`, `scripts/pm_pull_btc5m_day.py`.
+
+| Rule | Sep 9 bot share of taker $ | Sep 9 bot PnL / human PnL | Aug 30 bot share | Aug 30 bot PnL / human PnL |
+|---|---|---|---|---|
+| Report: 300+ fills, or 100+ across 16h | 59.9% | +0.86% / -2.15% | 59.2% | +1.54% / -2.12% |
+| Sleep-gap: 300+, or 30+ with no 6h gap, or two-sided | 68.9% | +0.74% / -2.76% | 67.9% | +1.27% / -2.56% |
+| Pure sleep, no fills filter: bot = no 6h gap | 63.2% | +0.84% / -2.39% | 57.3% | +1.97% / -2.55% |
+| Sleep plus density, no fills filter: no 6h gap, or dense 4h+ span in share sizes, or two-sided | 67.2% | +0.78% / -2.65% | 64.1% | +1.56% / -2.66% |
+| Combined: sleep-gap rule plus dense scheduled sleepers | 69.4% | +0.74% / -2.82% | 68.2% | +1.25% / -2.56% |
+| Whole heavy band = bots (30+ fills) | 87.8% | +0.17% / -4.07% | 89.2% | +0.17% / -1.06% |
+
+Findings.
+- Sleep alone lands within 6 to 11 points of the full rule and keeps the PnL separation, so the fills count is not
+  doing the work; the sleep gap is. What sleep alone misses: sleeping machines. 317 wallets (7.5% of Sep 9 $) show a
+  6h+ gap but are two-sided in 45% of their windows, size in shares (15% exact-dollar) and trade half the windows of an
+  8.8h span; a bot that ran part of the day looks asleep for the rest of it.
+- The US-stock-hours bot population is small. Sleepers with 30+ fills whose waking span sits inside 13:00-21:00 UTC are
+  5.0% (Sep 9) and 6.5% (Aug 30) of taker $, and 58 to 68% of their buy orders are exact dollars: US day traders, not
+  scripts. The dense share-typed subset, the actual scheduled bots, is 0.5 to 0.7% of taker $. Sleep start times are
+  spread flat across all 24 UTC hours when weighted by dollars, so there is no single bedtime cluster to exploit.
+- Density is the right complement to sleep but needs a span condition: 63 wallets (1.2% of $) trade 80%+ of the
+  windows in a 1.5-hour session with 85% exact-dollar orders and 44% sells. Those are human binges. The scheduled-bot
+  clause therefore requires a 4h+ span and share-typed sizes; it adds 0.5% of $.
+- Calling the whole heavy band bots (87 to 89%) is refuted by PnL: the bot class's edge collapses to +0.17% because
+  it absorbs the losing session traders.
+Working rule from here: combined. Bot = 300+ fills, or 30+ fills with no 6h gap, or two-sided buying in 40%+ of
+windows, or a dense (50%+ of windows) share-typed run of 4h+ that then stops. Bots 68 to 69% of taker $ on both days.
+
