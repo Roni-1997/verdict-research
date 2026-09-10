@@ -59,3 +59,41 @@ measures order denomination, not the client. Public trade records carry no clien
 the only clean origin evidence available to an outsider is behavioural: fills per day, hours active, same-second
 orders across markets, two-sided activity in one window, and reaction latency to the reference price (which needs
 a live millisecond capture of the CLOB websocket; the public trade timestamps are whole seconds).
+
+## Revised classifier: the sleep gap (2026-09-10)
+
+Objection tested: "a human does not make 50 fills a day; the heavy band is bots". Signal: the longest gap between a
+wallet's orders inside the UTC day, wrap-around included. A person trading in sessions leaves a gap of several
+hours; a script does not. Script: `scripts/pm_reclassify_sleep_gap_2026-09-10.py`.
+
+| Fills/day tier | Share of taker $ | $ from wallets with a gap of 8h+ | 6-8h | 3-6h | under 3h | Median windows | Median orders | Median active hours |
+|---|---|---|---|---|---|---|---|---|
+| under 30 | 12.2% | 85% | 4% | 11% | 0% | 4 | 5 | 2 |
+| 30-99 | 19.5% | 55% | 8% | 14% | 22% | 32 | 48 | 10 |
+| 100-299 | 19.5% | 34% | 9% | 15% | 42% | 76 | 141 | 16 |
+| 300+ | 48.8% | 6% | 4% | 12% | 78% | 162 | 460 | 24 |
+
+The heavy band is two populations:
+
+| Band | Sleeps (gap 6h+) | Wallets | Share of band $ | Median active hours | Median windows | Exact-dollar buys | Sells | Modal order size share | PnL to settlement |
+|---|---|---|---|---|---|---|---|---|---|
+| 30-99 | yes | 927 | 63% | 7 | 26 | 41% | 26% | 9% | -0.7% |
+| 30-99 | no | 431 | 36% | 19 | 43 | 5% | 4% | 20% | +0.6% |
+| 100-299 | yes | 293 | 42% | 10 | 55 | 32% | 30% | 6% | -3.6% |
+| 100-299 | no | 253 | 57% | 23 | 106 | 9% | 8% | 13% | -2.2% |
+
+Sleepers size in dollars, exit a quarter of the time, trade 26-55 windows over a 7-10 hour session and lose like
+retail. Non-sleepers run 19-23 hours, size in shares, repeat sizes, never exit, and the 30-99 group earns. The
+100-299 non-sleepers lose 2.2%: machines, but unprofitable ones (retail-run scripts). The 45 wallets in the 300+
+tier that do show a gap of 8h+ are machines that ran part of the day (median 366 orders, 1.1 fills per order, 50%
+two-sided).
+
+Revised rule: bot = 300+ fills, or 30+ fills with no gap of 6h+, or two-sided buying in 40%+ of windows (5+
+windows). Sep 9: bots 68.9% of taker $ (1,111 wallets, PnL +0.74%), humans 31.1% (PnL -2.76%): manual 12.0%,
+session traders 30-99 fills 12.0%, session traders 100-299 fills 7.2%. Sensitivity: gap under 4h gives 65.3% bots,
+under 8h 71.9%. Report rule for comparison: 60.0% bots (+0.86%), 40.0% humans (-2.15%). PnL is an independent
+check: it was not used to build either rule, and both rules separate a class that earns from a class that loses.
+
+Bias to note: a bot that started or stopped mid-day shows a long gap and is counted as a sleeper, so the revised
+share is a floor on machines, not a ceiling.
+
