@@ -1,4 +1,4 @@
-# Kalshi KXBTC15M: how much taker flow is automated? Order-shape evidence (2026-09-10)
+# Kalshi KXBTC15M: how much taker flow is automated? Order-shape evidence (2026-09-10; conclusion corrected the same day, see below)
 
 Kalshi publishes no trader identities, so a wallet-style bot share cannot be measured. This note uses the only
 origin signal in the public tape: whether a taker order's contract count is fractional (a dollar amount was typed
@@ -27,7 +27,20 @@ contracts in the first 100 ms and 26.0% after 3 seconds. Integer-sized flow does
 API-shaped class is not a fast-reacting population. Only one KXBTC15M window trades at a time (every 10-second
 bucket of the three days contains exactly one ticker), so same-millisecond cross-market detection is not possible.
 
-Reading. Three quarters of taker contracts are dollar-typed, which is the broker and app path. The integer quarter
+Correction (2026-09-10, later the same day). The reading below originally treated fractional contract counts as a
+broker-or-app signature and integer counts as the ceiling for API flow. That assumption is false: Kalshi's API takes
+contract counts as fixed-point strings with up to two decimals, fractional trading has been on for every market since
+the per-market flag was removed on 2026-07-09, and RFQs took fractional quantities from 2026-06-11 (Kalshi API
+changelog and fixed-point migration guide). A bot sizing orders in dollars over the API produces fractional counts
+exactly like a Robinhood customer. So: the automated share of Kalshi 15m taker flow is NOT measurable from the
+public tape, and no ceiling follows from order shape. What the table still shows: the integer-sized quarter behaves
+like the rest (same evening rhythm, same burst timing, negative after fees), and no size class of either shape earns
+after the fee. The fee, 1.75c at even odds, removes the latency edge that funds Polymarket's bots, so a profitable
+taker-bot population of Polymarket's kind cannot exist on Kalshi 15m; unprofitable automation (dollar-sized scripts,
+broker-routed algos) can, and is indistinguishable from retail here. Compare Polymarket 5m: 68 to 69% of taker
+dollars from machines under the combined rule.
+
+Original reading (superseded). Three quarters of taker contracts are dollar-typed, which is the broker and app path. The integer quarter
 is the ceiling for API-driven taker flow and it behaves like the rest: same evening rhythm, same burst timing,
 0.7 points better before fees, negative after fees. No size class of either shape earns after fees, against a
 Polymarket 5m bot core that earns about +1.6% at settlement. The fee schedule (1.75c at 50c) removes the latency

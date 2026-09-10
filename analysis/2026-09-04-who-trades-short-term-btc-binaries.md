@@ -1,9 +1,71 @@
 # Who trades short-term BTC binaries (Polymarket 5m/15m, Kalshi 15m)
 
-Analysis run 2026-09-01 to 09-04 for Verdict (HIP-4 outcome-market venue on Hyperliquid). Everything
-below is measured from venue APIs, not from third-party statistics, except where a line is labelled
-"per venue announcement". Cross-checked against the two source reports in `reports/` on 2026-09-08;
-see section 11. Do not re-derive unless you want to extend the sample.
+Analysis run 2026-09-01 to 09-04 for Verdict (HIP-4 outcome-market venue on Hyperliquid), with later
+updates identified below. The historical tables are API-derived analysis; externally reported facts
+and economic interpretations are labelled separately. Cross-checked against the source reports in
+`reports/` on 2026-09-08; matching those reports is not an independent validation of their methodology.
+
+Interpretation updated 2026-09-10: the executive takeaway and section 8 supersede the earlier claim
+that automated markets necessarily depend on retail losses. Historical "bot", "human" and "retail"
+labels below are behavioural proxies, not verified identities. Historical settlement markouts are
+not complete wallet profitability: fees, rebates, other positions and external hedges can change the
+result. This update does not re-run the historical datasets.
+
+## Executive takeaway: professional flow does not require "dumb money"
+
+**Deribit's CEO has described approximately 80-85% of its business as institutional, including
+volume and open interest.** This is a management estimate from an earlier public interview, not a
+current audited customer census, and it does not mean "85% bots". Source chain: CEO Luuk Strijers
+speaking in the interview clip and transcript published by [Kemet Trading](https://www.linkedin.com/posts/kemettrading_derivativesdecoded-podcast-cryptoinvesting-activity-7336840655530315776-DLxC).
+Confidence is high that this is the CEO's reported estimate; the exact measurement period and
+underlying classification data were not published with the clip.
+
+### Why this can work
+
+A professional venue sells execution and risk transfer, not just opportunities to beat uninformed
+traders. Its customers can have different objectives:
+
+- A fund buys protection for an existing portfolio.
+- An option seller accepts risk in exchange for a premium.
+- A dealer hedges exposure created by a client's trade elsewhere.
+- Market makers and arbitrageurs price, redistribute and hedge that exposure across instruments.
+
+**Simple illustration, not a measured Deribit trade:** a fund holding BTC buys downside protection.
+If BTC rises, that option may expire worthless, but the fund's BTC appreciates. The premium bought
+protection; losing money on that one option does not make the fund irrational. Another professional
+can earn a premium for bearing risk, and the venue can earn fees for matching them. This is the
+standard distinction between hedgers transferring risk and speculators accepting it, described by
+[CME](https://www.cmegroup.com/education/courses/introduction-to-futures/understanding-the-role-of-hedgers).
+
+There is also a concrete Deribit example: a [2022 OrBit Markets article published by Paradigm](https://www.paradigm.co/blog/paradigm-defi-options-vaults)
+describes option vaults selling contracts to professional market makers, with Deribit contracts used
+to hedge those flows. The visible exchange trade can therefore be professional-to-professional while
+the originating investment demand sits elsewhere. This is a historical mechanism, not a current
+estimate of vaults' share of Deribit volume.
+
+### What the retail/noise-flow argument gets wrong
+
+**Retail is an identity, automation is an execution method, and risk transfer is a reason to trade.**
+They are not interchangeable. A professional can submit an automated hedge that is not trying to
+predict the next price change. Conversely, a retail trader can be informed or run a bot. Less
+information-driven flow can help market makers, but it need not come from an unsophisticated person.
+
+One customer exposure can also lead to multiple genuine hedge and rebalance trades. A high automated
+share therefore does not establish that economic demand is absent. Nor does Deribit's institutional
+share independently validate our Polymarket behavioural classifier: the definitions and denominators
+are different.
+
+**The important limit:** this does not mean a closed loop of arbitrage bots creates unlimited profit.
+Trading gains and losses offset before costs; participants can nevertheless gain economically from
+reduced risk or useful exposure. A durable venue needs recurring reasons to pay trading costs and
+liquidity providers that can cover adverse selection, inventory risk and operating costs. Those
+reasons may be entirely professional, or may reach the venue through brokers and dealers.
+
+**Implication for Verdict:** professional-first is a credible model, not proof of demand for our
+five-minute contracts. We must establish who wants those exact expiries, strikes and settlement
+rules, and show repeat fee-paying activity with sustainable liquidity. The question is not "where
+are the dumb retail traders?" It is **"who needs this exposure or execution, and why will they keep
+paying for it?"**
 
 ## 0. Vocabulary (most published numbers get this wrong)
 
@@ -146,13 +208,15 @@ The wallet-level list of the top Polymarket takers and makers (addresses, displa
 
 ## 8. Conclusions that matter for a new venue
 
-1. **The customer is not "educated".** Side choice is explained only by which side is already winning. No learning, no money management, negative expectancy after fees for every human class. It is a fast, capped-loss, chart-driven bet, closer to 0DTE options and retail FX than to informed trading. ESMA prohibited binary options for EU retail clients in 2018 after national regulators' studies found that most retail clients lose money (the 74-89% loss range widely quoted alongside it is the CFD risk-warning figure). Treat the legal posture as first-order.
-2. **Machines are the majority and they follow flow, they do not create it.** 66-78% of Polymarket 5m volume is bots; they earn +1-2% and are funded by the roughly $75k/day that humans lose plus the reward pools. A bot-only market has no source of money.
-3. **Volume follows the funnel, not the incentives.** Polymarket's decline tracks new-wallet inflow (-80%), not user behaviour. Retention is 9% at one month.
-4. **15m keeps humans better than 5m** (humans about breakeven vs -3% to -5%). If human retention matters, the 15m tenor is the friendlier product; 5m is where the volume and the toxicity are.
-5. **Taker cash rewards would be about 90% a bot subsidy.** Pay makers for resting depth (quote score) and for absorbing flow weighted by adverse selection; give takers points with per-address caps, never cash per trade.
-6. **The feed and reprice speed are the product.** The entire bot tail's strategy is "read the public oracle, hit stale quotes". A settlement index slower than the makers' feed gets farmed on day one.
-7. **Order count, not order size, is the load.** Average order is $20 for humans and bots alike on Polymarket (median $4-5); Kalshi averages 146 contracts ($70). Polymarket 5m at its peak was about 950k taker orders/day.
+These are research implications and recommendations, not additional measured findings.
+
+1. **A professional-heavy venue can be viable.** Deribit's management-reported 80-85% institutional share is a concrete precedent. It does not prove a no-retail ecosystem or demand for five-minute binaries. The relevant customer distinction is who originates demand, who intermediates risk, and how each executes - not simply "humans versus bots".
+2. **Retail losses are not the only possible source of trading revenue.** Funds can pay to hedge, dealers to offset client exposures, and investors to take or sell risk. Market makers need flow they can price and manage profitably, not necessarily uninformed retail counterparties. Neither trade-frequency labels nor standalone settlement markouts identify everyone's motives or complete economic returns.
+3. **Distribution and retention still matter.** The sampled Polymarket decline coincides with weaker new-wallet inflow; that does not establish a single cause. Professional-first distribution can mean funds, dealers, brokers and other frontends. We should measure repeat usage rather than assume incentives or a consumer funnel alone will sustain volume.
+4. **Choose the tenor by demand and execution quality.** The sampled lower-frequency cohorts had less-negative settlement markouts in 15m than 5m, but that is not proof of better retention or net profitability. For Verdict, test exact contract demand, spread, depth, slippage and repeat trading for each tenor. Legal and access requirements remain a separate launch condition; deterministic settlement alone does not establish legality.
+5. **Judge liquidity and venue economics after incentives.** Proposed success measures: repeat fee-paying customers; depth and spreads at usable sizes; LP profitability after hedges, fees and rewards; and venue revenue after rebates, incentives and operating costs. Arbitrage volume is useful only if the surrounding economics are sustainable, not merely subsidised turnover.
+6. **Protect execution and settlement quality.** Latency arbitrage is a real risk, but the observed behaviour does not prove it is every automated trader's strategy. Deribit explicitly describes options speed bumps intended to protect passive LPs from latency arbitrage in its [Starbase infrastructure update](https://insights.deribit.com/exchange-updates/starbase-a-new-era-of-high-performance-trading-on-deribit/). Professional participation and protection against toxic execution are compatible.
+7. **Capacity planning must include messages, not just dollars.** Measure peak order submissions, cancellations, replacements, fills and market-data fan-out. The historical fill counts describe executed activity, not the full infrastructure load.
 
 ## 9. Artifacts in this repository
 
@@ -179,3 +243,10 @@ The wallet-level list of the top Polymarket takers and makers (addresses, displa
 - Section 7 magnitudes re-checked live against the builders leaderboard on Sep 8.
 - Not independently re-verified: the Kalshi incentive-cap figures and the $40-80M/month fee estimate (derived from the measured 1.8% fee burden on $76M/day of premium, which gives about $41M/month on the taker side alone).
 - The ESMA sentence in section 8 was reworded: the original attached the 74-89% figure to binary options; that range is the CFD risk-warning statistic.
+
+### Interpretation and source update (2026-09-10)
+
+- Added the Deribit institutional-share estimate from the CEO's own interview clip/transcript, with management-estimate status and measurement-period limitations. This is external evidence, not a result from our trade dataset.
+- Added the historical OrBit/Paradigm vault-to-dealer-to-Deribit hedging example and CME's explanation of hedgers' objectives. Economic illustrations are explicitly separate from measured participant shares.
+- Replaced section 8's categorical dependence-on-retail-losses argument and unsupported identity, causal, strategy and subsidy claims with qualified conclusions. Deribit is a market-structure analogy, not a cross-validation of the Polymarket classifier or proof of Verdict demand.
+- No historical tables, raw datasets or classifiers were re-run in this update. Source reports remain historical inputs; this synthesis's updated interpretation takes precedence over their earlier conclusions.
