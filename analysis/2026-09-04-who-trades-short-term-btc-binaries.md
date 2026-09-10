@@ -57,7 +57,7 @@ API limits found: Kalshi `/markets` (settled) only serves roughly the last 68 da
 | 6. Hedgers / arb (both sides in 40%+ of windows) | 2,500 | 1% | 24 | $9 | +4% | 0.5% | 1% |
 | (plus wallets seen once) | 138,000 | 14% | | | | | |
 
-- Human share of taker $: 5m Apr 53%, 5m Sep 35%, 15m Apr 55%, 15m Sep 47%.
+- Human share of taker $: 5m Apr 53%, 5m Sep 35%, 15m Apr 55%, 15m Sep 47%. These use the report rule (human = under 300 fills/day). Re-measured on Sep 9 under stricter rules the 5m figure spans 31 to 40%, so treat it as "about a third", not a point estimate; see `data/pm_btc5m_human_share_sensitivity_2026-09-09.md`.
 - Per $1M of Polymarket headline volume today (both legs): roughly $100k manual humans, $120k heavy or semi-automated humans, $780k bots (split approximate; the human total of about $220k is the measured figure).
 - Maker legs are 72-86% bots; 39% of maker premium comes from wallets that are also top taker bots; 22% of all premium is bot-vs-bot; self-trades 0.00%.
 
