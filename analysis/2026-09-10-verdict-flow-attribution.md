@@ -2,8 +2,8 @@
 
 Date: 2026-09-10. Scope: Polymarket BTC 5-minute up/down markets (series 10684), all 288 windows of
 2026-09-09 UTC, both legs of every fill (1,383,413 records: 476,400 taker legs, 907,013 maker legs, 8,328
-wallets, $14.28M touched, $7.14M single-counted). Aug 30 and Sep 8 are being re-pulled the same way and
-will be appended. Classification follows [Roni-1997/polymarket-segmentation](https://github.com/Roni-1997/polymarket-segmentation):
+wallets, $14.28M touched, $7.14M single-counted). Aug 30 and Sep 8 were pulled the same way; the three-day
+tables are in section 4b. Classification follows [Roni-1997/polymarket-segmentation](https://github.com/Roni-1997/polymarket-segmentation):
 maker share of touched volume (70%+ high, 30-70% mid, under 30% low) by cadence (100+ fills fast, 10-100
 systematic, under 10 discretionary), Retail at any maker share under 10 fills. Proxy-wallet level, single
 day, so cadence is fills that day. Labels are behavioural, not identity. This document supersedes the
@@ -13,9 +13,9 @@ GTM sections are condensed in sections 6 and 7. Scripts: `scripts/pm_pull_btc5m_
 
 ## 1. The claim, in the form that survives diligence
 
-Volume and depth on short-term crypto binaries are machines. Market makers and fast machines are 63% of
-touched volume on Polymarket BTC 5m and 95% of the taker side is Bots plus Algo under the segmentation
-grid. Strict Retail, under 10 fills a day, is 1.3% of touched volume. A venue does not need a consumer
+Volume and depth on short-term crypto binaries are machines. Pro-MM, Fast-taker and Hybrid-bot are 85% of
+touched volume on Polymarket BTC 5m; market makers provide 73% of the maker side and Bots plus Algo consume
+94% of the taker side under the segmentation grid (three days, Aug 30, Sep 8, Sep 9). Strict Retail, under 10 fills a day, is 1.3% of touched volume. A venue does not need a consumer
 funnel to get liquidity: the 5m product opened at full size on its second day with 46% bot share.
 
 What every such venue also has is a minority of paying flow. People, meaning Retail plus tool-assisted
@@ -98,6 +98,54 @@ Crosswalk, share of each v1 cohort's touched dollars:
 
 Fast-taker is the cell that most needed splitting: 46% of its dollars are market-neutral machines that
 earn, 39% directional machines that do not, 15% people.
+
+## 4b. Three days: Aug 30, Sep 8 and Sep 9, 2026
+
+Same method on three days, 4,283,811 records and $42.0M touched ($14.0M a day). Shares are the
+mean of the daily shares; PnL dollars are summed. Two markets a day hit the pagination limit and are truncated.
+
+| Cohort | Wallets per day | % touched | % maker side | % taker side | PnL per $ | PnL $, three days | % touched by day (Aug 30, Sep 8, Sep 9) |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Pro-MM | 518 | 35.4% | 69.1% | 3.2% | +0.53% | +80,943 | 35.8, 34.8, 35.5 |
+| Fast-taker | 727 | 31.8% | 5.3% | 57.1% | +0.31% | +44,692 | 25.7, 35.2, 34.6 |
+| Hybrid-bot | 192 | 18.0% | 19.7% | 16.4% | +0.10% | +8,427 | 22.7, 16.2, 15.1 |
+| Systematic-taker | 2,673 | 10.3% | 0.5% | 19.8% | -2.09% | -94,766 | 9.6, 10.2, 11.3 |
+| Mid-MM | 438 | 2.1% | 4.1% | 0.2% | -1.12% | -8,914 | 3.7, 1.4, 1.2 |
+| Systematic-mixed | 311 | 1.1% | 1.0% | 1.1% | -0.33% | -1,400 | 1.1, 1.2, 1.0 |
+| Retail | 3,533 | 1.3% | 0.3% | 2.2% | -5.53% | -29,025 | 1.4, 1.1, 1.3 |
+
+| Persona | % touched | % maker side | % taker side | PnL $, three days | May 2026 venue-wide |
+|---|---:|---:|---:|---:|---:|
+| MMs (Pro-MM, Mid-MM) | 37.5% | 73.2% | 3.4% | +72,029 | 38.4% |
+| Bots and algo | 61.3% | 26.5% | 94.4% | -43,046 | 56.3% |
+| Retail | 1.3% | 0.3% | 2.2% | -29,025 | 5.3% |
+
+Pro-MM, Fast-taker and Hybrid-bot together are 85% of touched volume. Market makers provide 73% of the
+maker side; bots and algo consume 94% of the taker side. Retail is 1.3%. Settlement PnL moves about
+$41k a day from Systematic-taker and Retail to Pro-MM and Fast-taker.
+
+The proposed v2 split on the same three days:
+
+| v2 cohort | Wallets per day | % touched | % maker side | % taker side | PnL per $ | PnL $, three days | PnL per $ by day |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Pro-MM | 647 | 35.3% | 69.2% | 3.0% | +0.60% | +90,120 | +0.32%, +0.71%, +0.77% |
+| Part-time MM | 253 | 2.1% | 3.9% | 0.4% | -1.98% | -16,845 | -2.53%, -2.12%, -1.31% |
+| Neutral bot | 409 | 25.4% | 14.5% | 35.9% | +1.20% | +130,826 | +0.89%, +1.33%, +1.38% |
+| Directional bot | 1,068 | 20.5% | 8.5% | 31.9% | +0.30% | +21,671 | +1.15%, +0.00%, -0.23% |
+| Session trader | 2,361 | 15.1% | 3.4% | 26.3% | -2.88% | -182,139 | -3.02%, -2.84%, -2.76% |
+| Retail | 3,653 | 1.5% | 0.5% | 2.6% | -6.93% | -43,676 | -2.62%, -11.00%, -7.16% |
+
+| Rollup | % touched | % maker side | % taker side | PnL $, three days |
+|---|---:|---:|---:|---:|
+| MMs | 37.4% | 73.0% | 3.4% | +73,275 |
+| Machines | 45.9% | 23.0% | 67.8% | +152,497 |
+| People | 16.7% | 3.9% | 28.8% | -225,815 |
+
+The v2 validation rule (Neutral bot and Pro-MM positive, Directional bot near zero, Session trader
+negative, Retail most negative) holds on Sep 8 and Sep 9. On Aug 30 the directional machines earned
++1.15%, more than the neutral ones, so the rule holds in two days of three. Session traders lose 2.8 to
+3.0% per dollar on every day and are the largest single source of the money that the machines and the
+makers earn: $182k over three days against $44k from Retail.
 
 ## 5. Kalshi
 
