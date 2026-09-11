@@ -15,7 +15,7 @@ GTM sections are condensed in sections 6 and 7. Scripts: `scripts/pm_pull_btc5m_
 
 Volume and depth on short-term crypto binaries are machines. Pro-MM, Fast-taker and Hybrid-bot are 82% of
 touched volume on Polymarket BTC 5m over the 30 days to Sep 9; market makers provide 75% of the maker side and
-Bots plus Algo consume 92% of the taker side under the segmentation grid (section 4c). Strict Retail, under 10 fills a day, is 1.3% of touched volume. A venue does not need a consumer
+Bots plus Algo consume 92% of the taker side under the segmentation grid (section 4c). Strict Retail, under 10 fills a day, is 1.2% of touched volume over the 30 days. A venue does not need a consumer
 funnel to get liquidity: the 5m product opened at full size on its second day with 46% bot share.
 
 What every such venue also has is a minority of paying flow. People, meaning Retail plus tool-assisted
