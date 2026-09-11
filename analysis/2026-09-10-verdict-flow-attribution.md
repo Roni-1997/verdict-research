@@ -11,24 +11,26 @@ day, so cadence is fills that day. Labels are behavioural, not identity. This do
 GTM sections are condensed in sections 6 and 7. Scripts: `scripts/pm_pull_btc5m_both_legs.py`,
 `scripts/pm_cohorts_v1_v2_2026-09-10.py`. Results: `data/pm_btc5m_cohorts_v1_2026-09-09.json`, `_v2_`.
 
-## 1. The claim, in the form that survives diligence
+## 1. The claim, in plain language
 
-Volume and depth on short-term crypto binaries are machines. Pro-MM, Fast-taker and Hybrid-bot are 82% of
-touched volume on Polymarket BTC 5m over the 30 days to Sep 9; market makers provide 75% of the maker side and
-Bots plus Algo consume 92% of the taker side under the segmentation grid (section 4c). Strict Retail, under 10 fills a day, is 1.2% of touched volume over the 30 days. A venue does not need a consumer
-funnel to get liquidity: the 5m product opened at full size on its second day with 46% bot share.
+Short-term crypto binaries are traded by machines. Over the 30 days to September 9, market makers and fast
+trading bots were 82% of all volume on Polymarket's Bitcoin 5-minute markets (section 4c). Market makers
+posted 75% of all resting orders; bots took 92% of all aggressive trades. People placing fewer than 10
+trades a day were 1.2% of volume. A venue does not need a consumer funnel to get liquidity: Polymarket's
+5-minute market was 46% bots on its second day.
 
-What every such venue also has is a minority of paying flow. People, meaning Retail plus tool-assisted
-session traders, are 17% of touched volume and 29% of the taker side, and they lose about $76k a day on
-$7M of taker premium. Over the continuous 30 days to Sep 9 (`data/pm_btc5m_trailing30_2026-08-11_09-09.md`)
-machines were 67.5% of taker dollars, positive on all 30 days, people negative on all 30; 31.9% of wallets
-ended the month ahead and the median wallet lost 5.7%. Machines net about $42k and market makers about $33k. Machine-against-machine
-trading is zero-sum before costs. When Polymarket's new-wallet inflow fell 80%, bot dollars fell 43%.
+What every such venue also needs is someone for the machines to win from. People, meaning casual bettors
+plus active traders using tools, were about a fifth of volume and a third of aggressive trades, and they
+lost money on every one of the 30 days while the machines made money on every one
+(`data/pm_btc5m_trailing30_2026-08-11_09-09.md`). Only 30% of wallets finished the month ahead; the typical
+wallet lost 5.6% of what it traded. About $44,000 a day moved from people to machines and market makers.
+When Polymarket's inflow of new wallets fell 80% over the spring, bot volume fell 43% with it: machines
+follow the paying flow, they do not create it.
 
-So the investor sentence is: we do not need our own retail app, because the machines are the liquidity
-and they arrive on their own; we do need paying flow, and ours comes from HL-native traders one click
-away, partner frontends carrying our builder code, and a maker pool that bridges the gap. The machines
-are the liquidity. The frontends are the customers.
+The investor sentence: Verdict does not need its own retail app, because the machines are the liquidity
+and they arrive on their own. It does need the flow that pays, and that comes from Hyperliquid's own
+traders one click away, from partner front ends carrying Verdict's builder code, and from a market-maker
+pool that bridges the early days. The machines are the liquidity. The front ends are the customers.
 
 ## 2. Polymarket BTC 5m in the seven-cohort grid (2026-09-09; superseded by the 30-day window in 4c)
 
@@ -208,26 +210,29 @@ cannot exist there. Use Kalshi as the fee-model comparison, not as evidence abou
 
 ## 6. What this means for Verdict
 
-- **Liquidity is not the scarce input; paying flow is.** Recruit market makers and neutral machines with
-  a reliable feed, cancels and settlement, and expect them within days. Plan the paying flow explicitly:
-  HL-native directional traders, partner frontends via builder codes (Polymarket routes about 15% of its
-  volume through 50 third-party frontends), and the maker pool as a bridge, not a business model.
-- **No complete-set arbitrage on Verdict.** HIP-4 outcome markets are mirror books: buying YES is selling NO
-  on the same book. The A plus B under 1 persona does not exist here. Do not pitch it.
-- **Polymarket's machines are not migrating.** Zero of the top 100 Polymarket wallets are active on HIP-4
-  (segmentation repo, cross-venue check). The observed path is HL perps traders into HIP-4.
-- **Fees decide which machines you host.** Zero taker fee invites the neutral stale-quote machines that
-  earn +1.4% per dollar off makers and people; Kalshi's 1.75c at even odds removes that edge. Verdict launches
-  at fee scale 0 with no maker rebates on outcome markets, so settlement design (60-second CF average, dead
-  band, second source) is what protects makers until a fee exists.
-- **Contract compatibility before cross-venue volume.** A CF Benchmarks 60-second average is not the same
-  instrument as a Chainlink 60-second TWAP or a Hyperliquid mark. Write the equivalence spec before
-  projecting arbitrage demand.
-- **Recruit makers and takers together, then measure after incentives.** Paired pilot on a small contract
-  set, signed orders and fills recorded end to end, continued use tracked through at least one full weekly
-  cycle and one incentive step-down. Scorecard: repeat fee-paying strategies, depth at agreed sizes, LP
-  profitability after hedges and rewards, venue revenue after incentives, rejected orders and settlement
-  failures, concentration by firm.
+- **Liquidity is not the scarce input; paying flow is.** Market makers and bots come within days if the
+  price feed, cancels and settlement are reliable. The flow that pays has to be planned for: Hyperliquid's
+  own directional traders, partner front ends routing through Verdict's builder code (Polymarket gets
+  about 15% of its volume through 50 third-party front ends), and a market-maker pool as a bridge, not as
+  the business.
+- **No buy-both-sides arbitrage on Verdict.** On HIP-4 a market is one order book: buying YES is the same
+  as selling NO, so the "YES plus NO for less than a dollar" trade that Polymarket bots run cannot exist
+  here. Do not pitch it.
+- **Polymarket's bots are not coming.** None of its 100 largest wallets is active on HIP-4 (segmentation
+  repo, cross-venue check). The traders arriving on HIP-4 come from Hyperliquid perps.
+- **Fees decide which bots you host.** With no taker fee, the bots that earn are the ones picking off
+  stale quotes, about 1.4 cents per dollar, paid by market makers and people; Kalshi's fee of 1.75 cents
+  at even odds removes that edge. Verdict launches with fees off and no maker rebates on outcome markets,
+  so the settlement design (a 60-second CF Benchmarks average, a dead band, a second price source) is what
+  protects the market makers until a fee exists.
+- **Check that contracts match before counting on cross-venue traders.** A 60-second CF Benchmarks
+  average is not the same instrument as a Chainlink 60-second average or a Hyperliquid mark price. Write
+  the equivalence down before projecting arbitrage demand.
+- **Recruit market makers and traders together, then judge after incentives step down.** Run a paired
+  pilot on a few contracts, record every order and fill, and track use through a full week and one cut in
+  rewards. Scorecard: repeat fee-paying traders, depth at agreed sizes, market makers profitable after
+  hedges and rewards, venue revenue after incentives, rejected orders and settlement failures,
+  concentration by firm.
 
 ## 7. Evidence boundaries
 
