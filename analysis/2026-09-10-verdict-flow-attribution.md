@@ -20,7 +20,9 @@ funnel to get liquidity: the 5m product opened at full size on its second day wi
 
 What every such venue also has is a minority of paying flow. People, meaning Retail plus tool-assisted
 session traders, are 17% of touched volume and 29% of the taker side, and they lose about $76k a day on
-$7M of taker premium. Machines net about $42k and market makers about $33k. Machine-against-machine
+$7M of taker premium. Over the continuous 30 days to Sep 9 (`data/pm_btc5m_trailing30_2026-08-11_09-09.md`)
+machines were 67.5% of taker dollars, positive on all 30 days, people negative on all 30; 31.9% of wallets
+ended the month ahead and the median wallet lost 5.7%. Machines net about $42k and market makers about $33k. Machine-against-machine
 trading is zero-sum before costs. When Polymarket's new-wallet inflow fell 80%, bot dollars fell 43%.
 
 So the investor sentence is: we do not need our own retail app, because the machines are the liquidity

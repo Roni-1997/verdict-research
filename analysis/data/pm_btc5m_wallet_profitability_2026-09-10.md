@@ -1,4 +1,7 @@
-# What share of wallets is profitable on Polymarket BTC 5m? (2026-09-10)
+# What share of wallets is profitable on Polymarket BTC 5m? (2026-09-10, sampled days)
+
+**Superseded** by the continuous 30-day window in `pm_btc5m_trailing30_2026-08-11_09-09.md`: over a month 31.9% of
+wallets are profitable and the median wallet loses 5.7%; the single-day figures below are coin-flip artefacts.
 
 Settlement PnL per wallet: a buy of an outcome pays 1 if it wins, a sell the reverse, summed over the
 wallet's legs. Gross: no fees (none charged on these markets), no LP rewards, no positions carried
