@@ -13,9 +13,9 @@ GTM sections are condensed in sections 6 and 7. Scripts: `scripts/pm_pull_btc5m_
 
 ## 1. The claim, in the form that survives diligence
 
-Volume and depth on short-term crypto binaries are machines. Pro-MM, Fast-taker and Hybrid-bot are 85% of
-touched volume on Polymarket BTC 5m; market makers provide 73% of the maker side and Bots plus Algo consume
-94% of the taker side under the segmentation grid (three days, Aug 30, Sep 8, Sep 9). Strict Retail, under 10 fills a day, is 1.3% of touched volume. A venue does not need a consumer
+Volume and depth on short-term crypto binaries are machines. Pro-MM, Fast-taker and Hybrid-bot are 82% of
+touched volume on Polymarket BTC 5m over the 30 days to Sep 9; market makers provide 75% of the maker side and
+Bots plus Algo consume 92% of the taker side under the segmentation grid (section 4c). Strict Retail, under 10 fills a day, is 1.3% of touched volume. A venue does not need a consumer
 funnel to get liquidity: the 5m product opened at full size on its second day with 46% bot share.
 
 What every such venue also has is a minority of paying flow. People, meaning Retail plus tool-assisted
@@ -30,7 +30,7 @@ and they arrive on their own; we do need paying flow, and ours comes from HL-nat
 away, partner frontends carrying our builder code, and a maker pool that bridges the gap. The machines
 are the liquidity. The frontends are the customers.
 
-## 2. Polymarket BTC 5m in the seven-cohort grid (2026-09-09)
+## 2. Polymarket BTC 5m in the seven-cohort grid (2026-09-09; superseded by the 30-day window in 4c)
 
 | Cohort | Wallets | % touched | % maker side | % taker side | $ per fill | PnL to settlement per $ | PnL $ |
 |---|---|---|---|---|---|---|---|
@@ -101,7 +101,7 @@ Crosswalk, share of each v1 cohort's touched dollars:
 Fast-taker is the cell that most needed splitting: 46% of its dollars are market-neutral machines that
 earn, 39% directional machines that do not, 15% people.
 
-## 4b. Three days: Aug 30, Sep 8 and Sep 9, 2026
+## 4b. Three days: Aug 30, Sep 8 and Sep 9, 2026 (superseded by 4c)
 
 Same method on three days, 4,283,811 records and $42.0M touched ($14.0M a day). Shares are the
 mean of the daily shares; PnL dollars are summed. Two markets a day hit the pagination limit and are truncated.
@@ -148,6 +148,54 @@ negative, Retail most negative) holds on Sep 8 and Sep 9. On Aug 30 the directio
 +1.15%, more than the neutral ones, so the rule holds in two days of three. Session traders lose 2.8 to
 3.0% per dollar on every day and are the largest single source of the money that the machines and the
 makers earn: $182k over three days against $44k from Retail.
+
+## 4c. Trailing 30 days, both legs: the grid over the full window (2026-08-11 to 2026-09-09)
+
+Every fill, both legs, for 30 consecutive UTC days: 57,300 proxy wallets, $458.4M touched
+($15.28M a day, $7.64M single-counted). One cohort per wallet for the whole window, as the
+segmentation repo defines it: cadence is fills per active day across the window and maker share is the wallet's
+maker touched volume over its total. Settlement PnL is gross of fees (none charged) and LP rewards. Over the
+month 30.3% of wallets ended ahead, the median wallet lost 5.6% of what it traded, and the top 1%
+of wallets took 82% of gross gains. This section supersedes the one-day and three-day tables above.
+
+| Cohort | Wallets | % touched | % maker side | % taker side | PnL per $ | PnL $, 30 days | Wallets profitable | Median PnL per $ |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| Pro-MM | 1,418 | 38.4% | 69.9% | 5.8% | +0.16% | +282,587 | 28.8% | -1.7% |
+| Fast-taker | 2,379 | 21.9% | 3.1% | 41.5% | +0.38% | +377,546 | 37.2% | -0.7% |
+| Hybrid-bot | 763 | 21.9% | 19.8% | 24.2% | +0.66% | +663,317 | 29.5% | -1.4% |
+| Systematic-taker | 18,301 | 12.4% | 0.8% | 24.4% | -1.58% | -895,313 | 29.1% | -3.2% |
+| Mid-MM | 1,478 | 2.6% | 4.7% | 0.3% | -0.04% | -5,208 | 32.5% | -3.1% |
+| Systematic-mixed | 2,002 | 1.6% | 1.5% | 1.7% | -1.79% | -132,496 | 31.8% | -2.4% |
+| Retail | 30,959 | 1.2% | 0.2% | 2.1% | -5.37% | -290,434 | 30.4% | -20.5% |
+
+| Persona | Wallets | % touched | % maker side | % taker side | PnL $, 30 days | May 2026 venue-wide |
+|---|---:|---:|---:|---:|---:|---:|
+| MMs (Pro-MM, Mid-MM) | 2,896 | 41.0% | 74.6% | 6.2% | +277,379 | 38.4% |
+| Bots and algo | 23,445 | 57.8% | 25.1% | 91.7% | +13,055 | 56.3% |
+| Retail | 30,959 | 1.2% | 0.2% | 2.1% | -290,434 | 5.3% |
+
+Pro-MM, Fast-taker and Hybrid-bot together are 82.3% of touched volume (daily range 82% to 88%). Market makers
+provide 74.6% of the maker side; bots and algo consume 91.7% of the taker side. Retail is 1.2% of touched volume.
+Over the month $1.32M, about $44k a day, moved from Systematic-taker, Systematic-mixed and Retail to Pro-MM,
+Fast-taker and Hybrid-bot. Note that Pro-MM wallets are only 29% profitable before LP rewards, with a median
+of -1.7% per dollar: a few large makers earn, the rest live on rewards.
+
+The proposed v2 split over the same window (modal daily cohort per wallet):
+
+| v2 cohort | Wallets | % touched | % maker side | % taker side | PnL per $ | PnL $, 30 days | Wallets profitable |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Pro-MM | 1,693 | 37.5% | 68.2% | 5.6% | +0.18% | +305,421 | 28.4% |
+| Part-time MM | 835 | 2.8% | 4.6% | 1.0% | -0.38% | -49,337 | 34.5% |
+| Neutral bot | 2,035 | 22.7% | 12.8% | 33.0% | +1.50% | +1,557,025 | 29.4% |
+| Directional bot | 2,327 | 15.6% | 8.1% | 23.3% | +0.12% | +88,002 | 39.8% |
+| Session trader | 15,384 | 17.8% | 4.8% | 31.2% | -1.74% | -1,420,280 | 28.1% |
+| Retail | 35,026 | 3.7% | 1.5% | 5.9% | -2.86% | -480,830 | 30.7% |
+
+Rollup: MMs 40.3% of touched (+256,084), Machines 38.3% (+1,645,027), People 21.4% (-1,901,110). Neutral machines
+earn +1.50% per dollar and took $1.56M; session traders lost $1.42M, three times what Retail lost.
+The v2 ordering (Neutral bot and Pro-MM positive, Directional bot near zero, Session trader negative, Retail most
+negative) holds over the full window. Result file: `data/pm_btc5m_cohorts30_2026-08-11_09-09.json` (per-month and
+per-day tables included).
 
 ## 5. Kalshi
 
